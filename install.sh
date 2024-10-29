@@ -57,7 +57,7 @@ fi
 
 read -p "Хотите установить cava? (y/n): " choice
 if [[ "$choice" == [Yy] ]]; then
-    yay -S --noconfirm cava
+    sudo yay -S --noconfirm cava
 fi
 
 read -p "Хотите установить nvidia-settings? (y/n): " choice
@@ -67,7 +67,7 @@ fi
 
 read -p "Хотите установить minecraft-launcher? (y/n): " choice
 if [[ "$choice" == [Yy] ]]; then
-    yay -S --noconfirm minecraft-launcher
+    sudo yay -S --noconfirm minecraft-launcher
 fi
 
 sudo pacman -S --noconfirm ly
