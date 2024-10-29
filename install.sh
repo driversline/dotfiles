@@ -26,11 +26,11 @@ done
 mkdir -p ~/.config/bspwm ~/.config/picom ~/.config/kitty ~/wallpapers
 
 declare -A files_to_move=(
-    [~/Downloads/bspwmrc]=~/.config/bspwm
-    [~/Downloads/sxhkdrc]=~/.config/bspwm
-    [~/Downloads/picom.conf]=~/.config/picom
-    [~/Downloads/kitty.conf]=~/.config/kitty
-    [~/Downloads/picom.conf]=~/.config/kitty
+    [~/Downloads/config/bspwmrc]=~/.config/bspwm
+    [~/Downloads/config/sxhkdrc]=~/.config/bspwm
+    [~/Downloads/config/picom.conf]=~/.config/picom
+    [~/Downloads/config/kitty.conf]=~/.config/kitty
+    [~/Downloads/config/theme.conf]=~/.config/kitty
     [~/Downloads/grass.jpg]=~/wallpapers
     [~/Downloads/.xsession]=~/
 )
