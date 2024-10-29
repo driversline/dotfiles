@@ -1,0 +1,28 @@
+super + w
+  kitty
+ctrl + super + alt
+  poweroff
+super + r
+  ranger
+super + c
+  kitty -e cava
+super + q
+  firefox
+super + Left
+  bspc desktop -f prev
+super + Right
+  bspc desktop -f next
+super + x
+  bspc node -c
+ctrl + Up
+  bspc node -s north
+ctrl + Down
+  bspc node -s south
+ctrl + Left
+  bspc node -s west
+ctrl + Right
+  bspc node -s east
+super + alt + Left
+  bspc node -d prev
+super + alt + Right
+  bspc node -d next
