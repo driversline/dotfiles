@@ -18,3 +18,5 @@ echo "Создание символической ссылки..."
 sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox
 
 echo "Firefox установлен успешно! Вы можете запустить его, введя 'firefox' в терминале."
+
+exit 0
