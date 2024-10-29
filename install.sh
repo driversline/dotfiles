@@ -26,11 +26,13 @@ done
 mkdir -p ~/.config/bspwm ~/.config/picom ~/.config/kitty ~/wallpapers
 
 declare -A files_to_move=(
-    [~/Downloads/bspwmrc]=~/.config/bspwm/bspwmrc
-    [~/Downloads/sxhkdrc]=~/.config/bspwm/sxhkdrc
-    [~/Downloads/picom.conf]=~/.config/picom/picom.conf
-    [~/Downloads/grass.jpg]=~/wallpapers/grass.jpg
-    [~/Downloads/.xsession]=~/.xsession
+    [~/Downloads/bspwmrc]=~/.config/bspwm
+    [~/Downloads/sxhkdrc]=~/.config/bspwm
+    [~/Downloads/picom.conf]=~/.config/picom
+    [~/Downloads/kitty.conf]=~/.config/kitty
+    [~/Downloads/picom.conf]=~/.config/kitty
+    [~/Downloads/grass.jpg]=~/wallpapers
+    [~/Downloads/.xsession]=~/
 )
 
 for src in "${!files_to_move[@]}"; do
