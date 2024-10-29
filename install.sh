@@ -15,11 +15,6 @@ move_file() {
     fi
 }
 
-if ! command -v sudo &> /dev/null; then
-    echo "sudo не установлен. Завершение работы."
-    exit 1
-fi
-
 cd ~/Downloads || { echo "Не удалось перейти в директорию ~/Downloads. Завершение работы."; exit 1; }
 
 packages=(bspwm kitty sxhkd vim ttf-dejavu picom feh gnome-keyring xorg-xsetroot xorg-xrandr)
