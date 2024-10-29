@@ -15,7 +15,7 @@ move_file() {
     fi
 }
 
-cd ~/Downloads || { echo "Не удалось перейти в директорию ~/Downloads. Завершение работы."; exit 1; }
+cd $HOME/Downloads || { echo "Не удалось перейти в директорию $HOME/Downloads. Завершение работы."; exit 1; }
 
 packages=(bspwm kitty sxhkd vim ttf-dejavu picom feh gnome-keyring xorg-xsetroot xorg-xrandr)
 
@@ -23,23 +23,23 @@ for pkg in "${packages[@]}"; do
     install_package "$pkg"
 done
 
-mkdir -p ~/.config/bspwm ~/.config/picom ~/.config/kitty ~/wallpapers
+mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/wallpapers
 
 declare -A files_to_move=(
-    [~/Downloads/config/bspwmrc]=~/.config/bspwm
-    [~/Downloads/config/sxhkdrc]=~/.config/bspwm
-    [~/Downloads/config/picom.conf]=~/.config/picom
-    [~/Downloads/config/kitty.conf]=~/.config/kitty
-    [~/Downloads/config/theme.conf]=~/.config/kitty
-    [~/Downloads/grass.jpg]=~/wallpapers
-    [~/Downloads/.xsession]=~/
+    [$HOME/Downloads/config/bspwmrc]=$HOME/.config/bspwm
+    [$HOME/Downloads/config/sxhkdrc]=$HOME/.config/bspwm
+    [$HOME/Downloads/config/picom.conf]=$HOME/.config/picom
+    [$HOME/Downloads/config/kitty.conf]=$HOME/.config/kitty
+    [$HOME/Downloads/config/theme.conf]=$HOME/.config/kitty
+    [$HOME/Downloads/grass.jpg]=$HOME/wallpapers
+    [$HOME/Downloads/.xsession]=$HOME/
 )
 
 for src in "${!files_to_move[@]}"; do
     move_file "$src" "${files_to_move[$src]}"
 done
 
-chmod +x ~/.config/bspwm/bspwmrc ~/.xsession ~/Downloads/*.sh
+chmod +x $HOME/.config/bspwm/bspwmrc $HOME/.xsession $HOME/Downloads/*.sh $HOME/Downloads/config/*.sh $HOME/Downloads/firefox/*.sh
 
 ./display.sh
 ./cpu.sh
@@ -76,3 +76,4 @@ sudo systemctl enable ly.service
 echo "Система требует перезагрузки."
 
 exit 0
+
