@@ -17,11 +17,13 @@ mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/wallp
 
 cd $HOME/Downloads || { echo "Не удалось перейти в директорию $HOME/Downloads. Завершение работы."; exit 1; }
 
-for src in "${!files_to_move[@]}"; do
+move_file() {
+    local src="$1"
+    local dest="$2"
     if [ -f "$src" ]; then
-        mv "$src" "${files_to_move[$src]}"
+        mv "$src" "$dest"
     fi
-done
+}
 
 declare -A files_to_move=(
     [$HOME/Downloads/config/bspwmrc]=$HOME/.config/bspwm
@@ -32,6 +34,10 @@ declare -A files_to_move=(
     [$HOME/Downloads/grass.jpg]=$HOME/wallpapers
     [$HOME/Downloads/.xsession]=$HOME/
 )
+
+for src in "${!files_to_move[@]}"; do
+    move_file "$src" "${files_to_move[$src]}"
+done
 
 chmod +x $HOME/.config/bspwm/bspwmrc $HOME/.xsession $HOME/Downloads/*.sh $HOME/Downloads/config/*.sh $HOME/Downloads/firefox/*.sh
 
