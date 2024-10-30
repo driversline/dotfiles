@@ -47,7 +47,7 @@ echo "2. cava"
 echo "3. nvidia-settings"
 echo "4. minecraft-launcher"
 
-read -p "Введите номера дополнительных пакетов для установки (через пробел): " -a selected_additional_indices
+read -p "Введите номера дополнительных пакетов для установки (через пробел), учтите что cava и minecraft-launcher не установятся без yay (пример: 1 2 4): " -a selected_additional_indices
 
 for index in "${selected_additional_indices[@]}"; do
     case "$index" in
