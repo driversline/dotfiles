@@ -55,9 +55,7 @@ for index in "${selected_additional_indices[@]}"; do
             sudo pacman -S --noconfirm base-devel
             git clone https://aur.archlinux.org/yay.git /tmp/yay
             cd /tmp/yay
-            makepkg -si --noconfirm
-            cd
-            rm -rf /tmp/yay
+            makepkg -si --noconfirm && cd && rm -rf /tmp/yay
             ;;
         2)
             sudo yay -S --noconfirm cava
