@@ -35,9 +35,6 @@ declare -A files_to_move=(
 
 chmod +x $HOME/.config/bspwm/bspwmrc $HOME/.xsession $HOME/Downloads/*.sh $HOME/Downloads/config/*.sh $HOME/Downloads/firefox/*.sh
 
-./display.sh
-./cpu.sh
-
 echo "Дополнительные пакеты для установки:"
 echo "1. yay"
 echo "2. cava"
