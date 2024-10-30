@@ -13,3 +13,5 @@ XRANDR_LINE="cpupower frequency-set -f $frequency"
 sed -i "/^exec bspwm/i $XRANDR_LINE" ~/.xsession
 
 sudo cpupower frequency-set -f "$frequency"
+
+exit 0
