@@ -23,3 +23,5 @@ if xrandr | grep -q "$OUTPUT"; then
 else
     echo "Monitor $OUTPUT not found."
 fi
+
+exit 0
