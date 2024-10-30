@@ -53,12 +53,11 @@ for index in "${selected_additional_indices[@]}"; do
     case "$index" in
         1)
             sudo pacman -S --noconfirm base-devel
-            if [ ! -d "$HOME/.yay" ]; then
-                git clone https://aur.archlinux.org/yay.git /tmp/yay
-                cd /tmp/yay || exit 1
-                makepkg -si --noconfirm
-                rm -rf /tmp/yay
-            fi
+            git clone https://aur.archlinux.org/yay.git /tmp/yay
+            cd /tmp/yay
+            makepkg -si --noconfirm
+            cd
+            rm -rf /tmp/yay
             ;;
         2)
             sudo yay -S --noconfirm cava
