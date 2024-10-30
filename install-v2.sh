@@ -26,11 +26,11 @@ move_file() {
 }
 
 declare -A files_to_move=(
-    [$HOME/Downloads/config/bspwmrc]=$HOME/.config/bspwm
-    [$HOME/Downloads/config/sxhkdrc]=$HOME/.config/bspwm
-    [$HOME/Downloads/config/picom.conf]=$HOME/.config/picom
-    [$HOME/Downloads/config/kitty.conf]=$HOME/.config/kitty
-    [$HOME/Downloads/config/theme.conf]=$HOME/.config/kitty
+    [$HOME/Downloads/bspwmrc]=$HOME/.config/bspwm
+    [$HOME/Downloads/sxhkdrc]=$HOME/.config/bspwm
+    [$HOME/Downloads/picom.conf]=$HOME/.config/picom
+    [$HOME/Downloads/kitty.conf]=$HOME/.config/kitty
+    [$HOME/Downloads/theme.conf]=$HOME/.config/kitty
     [$HOME/Downloads/grass.jpg]=$HOME/wallpapers
     [$HOME/Downloads/.xsession]=$HOME/
 )
@@ -39,7 +39,7 @@ for src in "${!files_to_move[@]}"; do
     move_file "$src" "${files_to_move[$src]}"
 done
 
-chmod +x $HOME/.config/bspwm/bspwmrc $HOME/.xsession $HOME/Downloads/*.sh $HOME/Downloads/config/*.sh $HOME/Downloads/firefox/*.sh
+chmod +x $HOME/.config/bspwm/bspwmrc $HOME/.xsession $HOME/Downloads/*.sh $HOME/Downloads/firefox/*.sh
 
 echo "Дополнительные пакеты для установки:"
 echo "1. yay"
