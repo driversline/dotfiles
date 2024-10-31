@@ -55,16 +55,16 @@ for index in "${selected_additional_indices[@]}"; do
             sudo pacman -S --noconfirm base-devel
             git clone https://aur.archlinux.org/yay.git /tmp/yay
             cd /tmp/yay
-            makepkg -si --noconfirm && cd && rm -rf /tmp/yay
+            makepkg -si && cd && rm -rf /tmp/yay
             ;;
         2)
-            sudo yay -S --noconfirm cava
+            yay -S --noconfirm cava
             ;;
         3)
             sudo pacman -S --noconfirm nvidia-settings
             ;;
         4)
-            sudo yay -S --noconfirm minecraft-launcher
+            yay -S --noconfirm minecraft-launcher
             ;;
         *)
             echo "Некорректный номер: $index"
