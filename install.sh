@@ -13,7 +13,7 @@ for pkg in "${packages[@]}"; do
     install_package "$pkg"
 done
 
-mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/wallpapers
+mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/.config/polybar $HOME/wallpapers
 
 cd $HOME/Downloads || { echo "Не удалось перейти в директорию $HOME/Downloads. Завершение работы."; exit 1; }
 
@@ -28,6 +28,7 @@ move_file() {
 declare -A files_to_move=(
     [$HOME/Downloads/bspwmrc]=$HOME/.config/bspwm
     [$HOME/Downloads/sxhkdrc]=$HOME/.config/bspwm
+    [$HOME/Downloads/config.ini]=$HOME/.config/polybar
     [$HOME/Downloads/picom.conf]=$HOME/.config/picom
     [$HOME/Downloads/kitty.conf]=$HOME/.config/kitty
     [$HOME/Downloads/theme.conf]=$HOME/.config/kitty
