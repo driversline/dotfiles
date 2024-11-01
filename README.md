@@ -4,7 +4,7 @@
 - 4.Run the script with `./install.sh`,
 - 5.Have fun.
 ---
-#IMPORTANT
+# IMPORTANT #
 - The `display.sh` and `cursor.sh` scripts should only run after the first launch.
 ---
 - The `firefox-custom.sh` script should only execute after the first opening of the regular Firefox (e.g., `firefox-bin.sh`).
