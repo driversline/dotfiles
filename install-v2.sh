@@ -7,7 +7,7 @@ install_package() {
     fi
 }
 
-packages=(bspwm kitty sxhkd polybar vim ttf-dejavu picom feh gnome-keyring xorg-xsetroot xorg-xrandr)
+packages=(bspwm kitty sxhkd polybar ranger vim ttf-dejavu picom feh gnome-keyring xorg-xsetroot xorg-xrandr)
 
 for pkg in "${packages[@]}"; do
     install_package "$pkg"
