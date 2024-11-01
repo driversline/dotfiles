@@ -3,7 +3,9 @@
 - 3.Set executable permissions for the script with `chmod +x install.sh`, 
 - 4.Run the script with `./install.sh`,
 - 5.Have fun.
-***Важно прочитать***
+  
+**Важно прочитать**
+  
 - The `display.sh` and `cursor.sh` scripts should only run after the first launch.
 ---
 - The `firefox-custom.sh` script should only execute after the first opening of the regular Firefox (e.g., `firefox-bin.sh`).
