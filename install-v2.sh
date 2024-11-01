@@ -7,7 +7,7 @@ install_package() {
     fi
 }
 
-packages=(bspwm kitty sxhkd polybar ranger vim ttf-dejavu terminus-font picom feh gnome-keyring xorg-xsetroot xorg-xrandr)
+packages=(bspwm kitty sxhkd polybar ranger vim picom feh gnome-keyring xorg-xsetroot xorg-xrandr)
 
 for pkg in "${packages[@]}"; do
     install_package "$pkg"
@@ -74,6 +74,8 @@ done
 
 sudo pacman -S --noconfirm ly
 sudo systemctl enable ly.service
+
+cd && git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh
 
 echo "Система требует перезагрузки."
 
