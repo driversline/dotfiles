@@ -6,4 +6,5 @@ picom --config ~/.config/picom/picom.conf &
 feh --bg-scale ~/wallpapers/grass.jpg &
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)
 export SSH_AUTH_SOCK
+polybar &
 exec bspwm
