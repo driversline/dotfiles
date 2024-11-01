@@ -4,7 +4,7 @@
 - 4.Run the script with `./install.sh`,
 - 5.Have fun.
   
-**Важно прочитать**
+<div align="center">Важно прочитать</div>
   
 - The `display.sh` and `cursor.sh` scripts should only run after the first launch.
 ---
