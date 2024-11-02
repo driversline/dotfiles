@@ -6,7 +6,7 @@
 - 4.Run the script with `./install.sh`,
 - 5.Have fun.
 ---
-- The `cpu.sh` run only with sudo <e.g. sudo ./cpu.sh>
+- The `cpu.sh` run only with sudo (e.g., sudo ./cpu.sh).
 ---
 - The `display.sh` and `cursor.sh` scripts should only run after the first launch.
 ---
