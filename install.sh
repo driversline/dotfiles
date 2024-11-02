@@ -76,8 +76,6 @@ done
 sudo pacman -S --noconfirm ly
 sudo systemctl enable ly.service
 
-cd && git clone https://github.com/powerline/fonts.git --depth=1 && cd fonts && ./install.sh
-
 echo "Система требует перезагрузки."
 
 exit 0
