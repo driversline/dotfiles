@@ -57,14 +57,19 @@ for index in "${selected_additional_indices[@]}"; do
             git clone https://aur.archlinux.org/yay.git /tmp/yay
             cd /tmp/yay
             makepkg -si && cd && rm -rf /tmp/yay
+            ;;
         2)
             yay -S --noconfirm cava
+            ;;
         3)
             sudo pacman -S --noconfirm nvidia-settings
+            ;;
         4)
             yay -S --noconfirm minecraft-launcher
+            ;;
         *)
             echo "Некорректный номер: $index"
+            ;;
     esac
 done
 
