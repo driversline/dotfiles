@@ -26,14 +26,14 @@ move_file() {
 }
 
 declare -A files_to_move=(
-    [$HOME/Downloads/bspwmrc]=$HOME/.config/bspwm
-    [$HOME/Downloads/sxhkdrc]=$HOME/.config/bspwm
-    [$HOME/Downloads/config.ini]=$HOME/.config/polybar
-    [$HOME/Downloads/picom.conf]=$HOME/.config/picom
-    [$HOME/Downloads/kitty.conf]=$HOME/.config/kitty
-    [$HOME/Downloads/theme.conf]=$HOME/.config/kitty
-    [$HOME/Downloads/grass.jpg]=$HOME/wallpapers
-    [$HOME/Downloads/.xsession]=$HOME/
+    [$HOME/Downloads/dotfiles/bspwmrc]=$HOME/.config/bspwm
+    [$HOME/Downloads/dotfiles/sxhkdrc]=$HOME/.config/bspwm
+    [$HOME/Downloads/dotfiles/config.ini]=$HOME/.config/polybar
+    [$HOME/Downloads/dotfiles/picom.conf]=$HOME/.config/picom
+    [$HOME/Downloads/dotfiles/kitty.conf]=$HOME/.config/kitty
+    [$HOME/Downloads/dotfiles/theme.conf]=$HOME/.config/kitty
+   # [$HOME/Downloads/wallpapers/grass.jpg]=$HOME/wallpapers
+    [$HOME/Downloads/dotfiles/.xsession]=$HOME/
 )
 
 for src in "${!files_to_move[@]}"; do
@@ -57,16 +57,12 @@ for index in "${selected_additional_indices[@]}"; do
             git clone https://aur.archlinux.org/yay.git /tmp/yay
             cd /tmp/yay
             makepkg -si && cd && rm -rf /tmp/yay
-            ;;
         2)
             yay -S --noconfirm cava
-            ;;
         3)
             sudo pacman -S --noconfirm nvidia-settings
-            ;;
         4)
             yay -S --noconfirm minecraft-launcher
-            ;;
         *)
             echo "Некорректный номер: $index"
             ;;
