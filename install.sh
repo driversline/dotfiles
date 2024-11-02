@@ -32,7 +32,7 @@ declare -A files_to_move=(
     [$HOME/Downloads/dotfiles/picom.conf]=$HOME/.config/picom
     [$HOME/Downloads/dotfiles/kitty.conf]=$HOME/.config/kitty
     [$HOME/Downloads/dotfiles/theme.conf]=$HOME/.config/kitty
-   # [$HOME/Downloads/wallpapers/grass.jpg]=$HOME/wallpapers
+    [$HOME/Downloads/wallpapers/paper.jpg]=$HOME/wallpapers
     [$HOME/Downloads/dotfiles/.xsession]=$HOME/
 )
 
