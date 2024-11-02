@@ -40,7 +40,7 @@ for src in "${!files_to_move[@]}"; do
     move_file "$src" "${files_to_move[$src]}"
 done
 
-chmod +x $HOME/.config/bspwm/bspwmrc $HOME/.xsession $HOME/Downloads/*.sh $HOME/Downloads/firefox/*.sh
+chmod +x $HOME/.config/bspwm/bspwmrc $HOME/.xsession $HOME/Downloads/scripts/*.sh $HOME/Downloads/firefox/*.sh
 
 echo "Дополнительные пакеты для установки:"
 echo "1. yay"
@@ -65,7 +65,6 @@ for index in "${selected_additional_indices[@]}"; do
             yay -S --noconfirm minecraft-launcher
         *)
             echo "Некорректный номер: $index"
-            ;;
     esac
 done
 
