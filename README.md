@@ -1,3 +1,5 @@
+***NOT WORK NOW 2-NOV***
+
 - 1.Clone the repository with `git clone https://github.com/driversline/bspwm ~/Downloads`, 
 - 2.Use `cd ~/Downloads`, 
 - 3.Set executable permissions for the script with `chmod +x install.sh`, 
