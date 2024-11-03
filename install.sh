@@ -15,7 +15,7 @@ done
 
 mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/wallpapers
 
-cd $HOME/Downloads || { echo "Не удалось перейти в директорию $HOME/Downloads"; exit 1; }
+cd $HOME/Downloads || { echo "Не удалось перейти в директорию ~/Downloads"; exit 1; }
 
 move_file() {
     local src="$1"
