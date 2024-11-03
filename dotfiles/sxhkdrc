@@ -4,6 +4,8 @@ ctrl + super + alt
   poweroff
 super + r
   ranger
+super + z
+  minecraft-launcher
 super + c
   kitty -e cava
 super + q
