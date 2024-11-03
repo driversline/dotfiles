@@ -7,15 +7,15 @@ install_package() {
     fi
 }
 
-packages=(bspwm kitty sxhkd polybar ranger vim picom feh gnome-keyring xorg-xsetroot xorg-xrandr)
+packages=(bspwm kitty sxhkd ranger neovim picom feh gnome-keyring xorg-xsetroot xorg-xrandr)
 
 for pkg in "${packages[@]}"; do
     install_package "$pkg"
 done
 
-mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/.config/polybar $HOME/wallpapers
+mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/wallpapers
 
-cd $HOME/Downloads || { echo "Не удалось перейти в директорию $HOME/Downloads. Завершение работы."; exit 1; }
+cd $HOME/Downloads || { echo "Не удалось перейти в директорию $HOME/Downloads"; exit 1; }
 
 move_file() {
     local src="$1"
@@ -28,11 +28,10 @@ move_file() {
 declare -A files_to_move=(
     [$HOME/Downloads/dotfiles/bspwmrc]=$HOME/.config/bspwm
     [$HOME/Downloads/dotfiles/sxhkdrc]=$HOME/.config/bspwm
-    [$HOME/Downloads/dotfiles/config.ini]=$HOME/.config/polybar
     [$HOME/Downloads/dotfiles/picom.conf]=$HOME/.config/picom
     [$HOME/Downloads/dotfiles/kitty.conf]=$HOME/.config/kitty
     [$HOME/Downloads/dotfiles/theme.conf]=$HOME/.config/kitty
-    [$HOME/Downloads/wallpapers/paper.jpg]=$HOME/wallpapers
+#   [$HOME/Downloads/wallpapers/paper.jpg]=$HOME/wallpapers
     [$HOME/Downloads/dotfiles/.xsession]=$HOME/
 )
 
@@ -43,12 +42,10 @@ done
 chmod +x $HOME/.config/bspwm/bspwmrc $HOME/.xsession $HOME/Downloads/scripts/*.sh $HOME/Downloads/firefox/*.sh
 
 echo "Дополнительные пакеты для установки:"
-echo "1. yay"
-echo "2. cava"
-echo "3. nvidia-settings"
-echo "4. minecraft-launcher"
 
-read -p "Введите номера дополнительных пакетов для установки (через пробел), учтите что cava и minecraft-launcher не установятся без yay (пример: 1 2 4): " -a selected_additional_indices
+echo "1 - yay"
+
+read -p "Введите номера дополнительных пакетов для установки:" -a selected_additional_indices
 
 for index in "${selected_additional_indices[@]}"; do
     case "$index" in
@@ -57,15 +54,6 @@ for index in "${selected_additional_indices[@]}"; do
             git clone https://aur.archlinux.org/yay.git /tmp/yay
             cd /tmp/yay
             makepkg -si && cd && rm -rf /tmp/yay
-            ;;
-        2)
-            yay -S --noconfirm cava
-            ;;
-        3)
-            sudo pacman -S --noconfirm nvidia-settings
-            ;;
-        4)
-            yay -S --noconfirm minecraft-launcher
             ;;
         *)
             echo "Некорректный номер: $index"
@@ -76,6 +64,6 @@ done
 sudo pacman -S --noconfirm ly
 sudo systemctl enable ly.service
 
-echo "Система требует перезагрузки."
+echo "Excellent."
 
 exit 0
