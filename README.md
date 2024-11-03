@@ -1,10 +1,10 @@
-***NOT WORK NOW 2-NOV***
-
-- 1.Clone the repository with `git clone https://github.com/driversline/bspwm ~/Downloads`, 
-- 2.Use `cd ~/Downloads`, 
-- 3.Set executable permissions for the script with `chmod +x install.sh`, 
-- 4.Run the script with `./install.sh`,
-- 5.Have fun.
+!WORK!
+---
+- 1.Clone the repository with `git clone https://github.com/driversline/bspwm ~/Downloads`
+- 2.Use `cd ~/Downloads`
+- 3.Set executable permissions for the script with `chmod +x install.sh`
+- 4.Run the script with `./install.sh`
+- 5.Have fun
 ---
 - The `cpu.sh` run only with sudo (e.g., sudo ./cpu.sh).
 ---
@@ -12,5 +12,5 @@
 ---
 - The `firefox-custom.sh` script should only execute after the first opening of the regular Firefox (e.g., `firefox-bin.sh`).
 ---
-- `config.ini` in the beta version. (Polybar)
+- `config.ini` in the beta version. (Polybar) (SKIP NOW)
 ---
