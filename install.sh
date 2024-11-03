@@ -7,7 +7,7 @@ install_package() {
     fi
 }
 
-packages=(bspwm kitty sxhkd ranger neovim picom feh gnome-keyring xorg-xsetroot xorg-xrandr)
+packages=(bspwm kitty sxhkd ranger neovim picom feh gnome-keyring zig xorg-xsetroot xorg-xrandr)
 
 for pkg in "${packages[@]}"; do
     install_package "$pkg"
@@ -61,8 +61,7 @@ for index in "${selected_additional_indices[@]}"; do
     esac
 done
 
-sudo pacman -S --noconfirm ly
-sudo systemctl enable ly.service
+git clone https://github.com/fairyglade/ly && cd ly && zig build && sudo zig build installsystemd && systemctl enable ly.service && systemctl disable getty@tty2.service
 
 echo "Excellent."
 
