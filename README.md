@@ -1,6 +1,6 @@
 !WORK!
 ---
-- Clone the repository with `git clone https://github.com/driversline/bspwm ~/Downloads`
+- Clone the repository with `git clone https://github.com/driversline/bspwm.git ~/Downloads`
 - Use `cd ~/Downloads`
 - Set executable permissions for the script with `chmod +x install.sh`
 - Run the script with `./install.sh`
