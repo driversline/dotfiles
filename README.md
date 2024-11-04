@@ -8,7 +8,7 @@
 ---
 - The `cpu.sh` run only with sudo (e.g., sudo ./cpu.sh).
 ---
-- The `display.sh` and `cursor.sh` scripts should only run after the first launch.
+- The `display.sh` and `cursor.sh` scripts should only run after the first launch. (In GUI)
 ---
 - The `firefox-custom.sh` script should only execute after the first opening of the regular Firefox (e.g., `firefox-bin.sh`).
 ---
