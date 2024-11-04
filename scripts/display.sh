@@ -1,6 +1,5 @@
 #!/bin/bash
 
-echo "xrandr output:"
 xrandr
 
 echo "Available monitors:"
