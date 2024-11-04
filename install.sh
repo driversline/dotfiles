@@ -3,7 +3,7 @@
 install_package() {
     local pkg="$1"
     if ! pacman -Qs "$pkg" > /dev/null; then
-        sudo pacman -S --noconfirm "$pkg" || { echo "Ошибка установки $pkg. Завершение работы."; exit 1; }
+        sudo pacman -S --noconfirm "$pkg" || { echo "Can't install $pkg. Exit."; exit 1; }
     fi
 }
 
@@ -15,7 +15,7 @@ done
 
 mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/wallpapers
 
-cd $HOME/Downloads || { echo "Не удалось перейти в директорию ~/Downloads"; exit 1; }
+cd $HOME/Downloads || { echo "Can't find ~/Downloads"; exit 1; }
 
 move_file() {
     local src="$1"
@@ -41,11 +41,11 @@ done
 
 chmod +x $HOME/.config/bspwm/bspwmrc $HOME/.xsession $HOME/Downloads/scripts/*.sh $HOME/Downloads/firefox/*.sh
 
-echo "Дополнительные пакеты для установки:"
+echo "Additional packages for installation:"
 
 echo "1 - yay"
 
-read -p "Введите номера дополнительных пакетов для установки:" -a selected_additional_indices
+read -p "Enter package numbers for installation:" -a selected_additional_indices
 
 for index in "${selected_additional_indices[@]}"; do
     case "$index" in
@@ -56,7 +56,7 @@ for index in "${selected_additional_indices[@]}"; do
             makepkg -si && cd && rm -rf /tmp/yay
             ;;
         *)
-            echo "Некорректный номер: $index"
+            echo "Incorrect number": $index"
             ;;
     esac
 done
