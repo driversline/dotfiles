@@ -17,7 +17,7 @@ for pkg in "${packages[@]}"; do
     install_package "$pkg"
 done
 
-mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/wallpapers
+mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/wallpapers $HOME/.config/neofetch
 
 cd $HOME/Downloads || { echo "Can't find ~/Downloads"; exit 1; }
 
