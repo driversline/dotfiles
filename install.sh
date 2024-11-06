@@ -7,7 +7,7 @@ sudo bash -c 'echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers'
 install_package() {
     local pkg="$1"
     if ! pacman -Qs "$pkg" > /dev/null; then
-        sudo pacman -S --noconfirm "$pkg" || { echo "Can't install $pkg. Exit."; exit 1; }
+        sudo pacman -S --noconfirm "$pkg" || { echo "Can't install $pkg"; exit 1; }
     fi
 }
 
@@ -17,7 +17,7 @@ for pkg in "${packages[@]}"; do
     install_package "$pkg"
 done
 
-mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/wallpapers $HOME/.config/neofetch
+mkdir -p $HOME/.config/bspwm $HOME/.config/picom $HOME/.config/kitty $HOME/wallpapers $HOME/.config/neofetch $HOME/.config/nvim
 
 cd $HOME/Downloads || { echo "Can't find ~/Downloads"; exit 1; }
 
