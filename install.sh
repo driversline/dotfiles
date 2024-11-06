@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo bash -c 'echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers'
+
 install_package() {
     local pkg="$1"
     if ! pacman -Qs "$pkg" > /dev/null; then
@@ -43,7 +45,12 @@ chmod +x $HOME/.config/bspwm/bspwmrc $HOME/.xsession $HOME/Downloads/scripts/*.s
 
 echo "Additional packages for installation:"
 
-echo "1 - yay"
+echo "1 | yay"
+echo "2 | cava"
+echo "3 | spotify"
+echo "4 | neofetch"
+echo "5 | minecraft-launcher"
+
 
 read -p "Enter package numbers for installation:" -a selected_additional_indices
 
@@ -55,6 +62,18 @@ for index in "${selected_additional_indices[@]}"; do
             cd /tmp/yay
             makepkg -si && cd && rm -rf /tmp/yay
             ;;
+        2)
+            yay -S --noconfirm cava && cd
+            ;;
+        3)
+            sudo pacman -S --noconfirm spotify && cd
+            ;;
+        4)
+            sudo pacman -S --noconfirm neofetch && cd
+            ;;
+        5)
+            yay -S --noconfirm minecraft-launcher && cd
+            ;;
         *)
             echo "Incorrect number": $index"
             ;;
@@ -63,6 +82,6 @@ done
 
 git clone https://github.com/fairyglade/ly && cd ly && zig build && sudo zig build installsystemd && systemctl enable ly.service && systemctl disable getty@tty2.service
 
-echo "Excellent."
+echo "Excellent. You can reboot system."
 
 exit 0
