@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 sudo bash -c 'echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers'
 
 install_package() {
