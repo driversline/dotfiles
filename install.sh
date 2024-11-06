@@ -52,7 +52,7 @@ echo "2 | cava"
 echo "3 | spotify"
 echo "4 | neofetch"
 echo "5 | minecraft-launcher"
-
+echo "6 | openrgb"
 
 read -p "Enter package numbers for installation:" -a selected_additional_indices
 
@@ -75,6 +75,9 @@ for index in "${selected_additional_indices[@]}"; do
             ;;
         5)
             yay -S --noconfirm minecraft-launcher && cd
+            ;;
+         6)
+            yay -S --noconfirm openrgb && cd
             ;;
         *)
             echo "Incorrect number": $index"
