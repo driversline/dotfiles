@@ -59,7 +59,7 @@ read -p "Enter package numbers for installation: " -a selected_additional_indice
 declare -A package_commands=(
     [1]="sudo pacman -S --noconfirm base-devel && git clone https://aur.archlinux.org/yay.git /tmp/yay && (cd /tmp/yay && makepkg -si --noconfirm) && rm -rf /tmp/yay"
     [2]="yay -S --noconfirm cava"
-    [3]="sudo pacman -S --noconfirm spotify"
+    [3]="yay -S --noconfirm spotify"
     [4]="sudo pacman -S --noconfirm neofetch"
     [5]="yay -S --noconfirm minecraft-launcher"
     [6]="yay -S --noconfirm openrgb"
