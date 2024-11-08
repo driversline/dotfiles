@@ -1,0 +1,19 @@
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control"
+
+[font]
+size = 10
+
+[font.normal]
+family = "Source Code Pro"
+style = "Regular"
+
+[window]
+padding = { x = 3, y = 3 }
