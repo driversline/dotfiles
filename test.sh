@@ -2,8 +2,6 @@
 
 set -e
 
-sudo bash -c 'echo "$(whoami) ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers'
-
 install_package() {
     pacman -Qs "$1" > /dev/null || sudo pacman -S --noconfirm "$1"
 }
