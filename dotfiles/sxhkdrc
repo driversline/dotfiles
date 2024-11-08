@@ -5,7 +5,7 @@ super + r
 super + m
   minecraft-launcher
 super + c
-  kitty -e cava
+  alacritty -e cava
 super + q
   firefox
 F8 + F9
