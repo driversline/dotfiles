@@ -73,7 +73,8 @@ for index in "${selected_additional_indices[@]}"; do
     fi
 done
 
-git clone https://github.com/fairyglade/ly && cd ly && zig build && sudo zig build installsystemd && sudo systemctl enable ly.service && sudo systemctl disable getty@tty2.service
+sudo pacman -S --noconfirm ly
+systemctl enable ly.service
 
 echo "Excellent. You can reboot system."
 
