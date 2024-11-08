@@ -52,7 +52,7 @@ echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n
 read -p "Enter package numbers for installation: " -a selected_additional_indices
 
 declare -A package_commands=(
-    [1]="mkdir -p /tmp/yay && cd /tmp/yay && cd $HOME/Downloads && sudo git clone https://aur.archlinux.org/yay.git /tmp/yay && cd /tmp/yay && makepkg -si --noconfirm && cd && rm -rf /tmp/yay"
+    [1]="git clone https://aur.archlinux.org/yay.git && makepkg -si --noconfirm"
     [2]="yay -S --noconfirm cava"
     [3]="yay -S --noconfirm spotify"
     [4]="sudo pacman -S --noconfirm neofetch"
