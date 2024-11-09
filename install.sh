@@ -6,7 +6,7 @@ install_package() {
     pacman -Qs "$1" > /dev/null || sudo pacman -S --noconfirm "$1"
 }
 
-packages=(bspwm kitty sxhkd ranger neovim picom feh gnome-keyring zig xorg-xsetroot xorg-xrandr ttf-dejavu)
+packages=(bspwm alacritty sxhkd ranger neovim picom feh gnome-keyring zig xorg-xsetroot xorg-xrandr ttf-dejavu)
 
 for pkg in "${packages[@]}"; do
     install_package "$pkg"
