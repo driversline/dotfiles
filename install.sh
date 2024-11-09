@@ -68,8 +68,7 @@ for index in "${selected_additional_indices[@]}"; do
     fi
 done
 
-sudo pacman -S --noconfirm ly
-systemctl enable ly.service
+sudo pacman -S --noconfirm ly && systemctl enable ly.service
 
 echo "Excellent. You can reboot system."
 
