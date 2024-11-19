@@ -26,7 +26,7 @@ done
 declare -A files_to_move=(
     ["$HOME/Downloads/dotfiles/bspwmrc"]="$HOME/.config/bspwm"
     ["$HOME/Downloads/dotfiles/sxhkdrc"]="$HOME/.config/bspwm"
-    ["$HOME/Downloads/dotfiles/picom.conf"]="$HOME/.config/picom"
+    ["$HOME/Downloads/dotfiles/picom.conf"]="$HOME/.config/bspwm"
     ["$HOME/Downloads/dotfiles/alacritty.toml"]="$HOME/.config/alacritty"
     ["$HOME/Downloads/wallpapers/Night.jpg"]="$HOME/wallpapers"
     ["$HOME/Downloads/dotfiles/.xsession"]="$HOME/"
