@@ -14,3 +14,5 @@ Can not work | Since 11 nov. without testing.
 ---
 - `config.ini` in the beta version. (Polybar) (SKIP NOW)
 ---
+- You can change version minecraft-fabric in `mods.sh`
+---
