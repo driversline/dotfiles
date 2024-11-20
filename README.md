@@ -4,7 +4,6 @@
 - Use `cd ~/Downloads`
 - Set executable permissions for the script with `chmod +x install.sh`
 - Run the script with `./install.sh`
-- Have fun
 ---
 - The `cpu.sh` run only with sudo (e.g., sudo ./cpu.sh).
 ---
