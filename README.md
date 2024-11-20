@@ -1,4 +1,4 @@
-Can not work | Since 11 nov. without testing.
+🚀
 ---
 - Clone the repository with `git clone https://github.com/driversline/bspwm.git ~/Downloads`
 - Use `cd ~/Downloads`
