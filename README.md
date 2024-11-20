@@ -1,9 +1,9 @@
 / About /
 ---
 - Clone with `git clone https://github.com/driversline/bspwm.git ~/Downloads`
-- Use `cd ~/Downloads`
-- Set executable permissions for the script with `chmod +x install.sh`
-- Run the script with `./install.sh`
+- Go to `cd ~/Downloads`
+- Set permissions for script with `chmod +x install.sh`
+- Run  `./install.sh`
 ---
 - The `cpu.sh` run only with sudo (e.g., sudo ./cpu.sh).
 ---
