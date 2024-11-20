@@ -9,7 +9,7 @@ read -p "Enter the monitor name (e.g., HDMI-0): " OUTPUT
 
 if xrandr | grep -q "$OUTPUT"; then
     read -p "Enter the desired resolution (e.g., 1920x1080): " SELECTED_RESOLUTION
-    read -p "Enter the desired refresh rate (default 60): " SELECTED_RATE
+    read -p "Enter the desired refresh rate (e.g., 60): " SELECTED_RATE
     SELECTED_RATE=${SELECTED_RATE:-60}
 
     if xrandr | grep -q "$SELECTED_RESOLUTION" && xrandr | grep -q "${SELECTED_RATE}"; then
