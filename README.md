@@ -1,9 +1,9 @@
-/ About /
+/ / /
 ---
-- Clone with `git clone https://github.com/driversline/bspwm.git ~/Downloads`
-- Go to `cd ~/Downloads`
-- Set permissions for script with `chmod +x install.sh`
-- Run  `./install.sh`
+- 1 `git clone https://github.com/driversline/bspwm.git ~/Downloads`
+- 2 `cd ~/Downloads`
+- 3 `chmod +x install.sh`
+- 4 `./install.sh`
 ---
 - The `cpu.sh` run only with sudo (e.g., sudo ./cpu.sh).
 ---
@@ -12,6 +12,4 @@
 - The `firefox-custom.sh` script should only execute after the first opening of the regular Firefox (e.g., use `firefox-bin.sh`).
 ---
 - `config.ini` in the beta version. (skip since 20 nov.)
----
-- You can change version minecraft-fabric in `mods.sh`
 ---
