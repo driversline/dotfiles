@@ -1,15 +1,13 @@
 / / /
 ---
-- 1 `git clone https://github.com/driversline/bspwm.git ~/Downloads`
-- 2 `cd ~/Downloads`
-- 3 `chmod +x install.sh`
-- 4 `./install.sh`
+- 1 | clone this repo
+- 2 | `cd ~/Downloads`
+- 3 | `chmod +x install.sh`
+- 4 | `./install.sh`
 ---
-- The `cpu.sh` run only with sudo (e.g., sudo ./cpu.sh).
+- The `cpu.sh` can't run without sudo.
 ---
-- The `display.sh` and `cursor.sh` scripts should only run after the first launch, with active bspwm gui session.
+- Run `display.sh` and `cursor.sh` after first launch in GUI session.
 ---
-- The `firefox-custom.sh` script should only execute after the first opening of the regular Firefox (e.g., use `firefox-bin.sh`).
----
-- `config.ini` in the beta version. (skip since 20 nov.)
+- Run `firefox-custom.sh` after first opening of regular firefox.
 ---
