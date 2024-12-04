@@ -1,9 +1,19 @@
-/  \ /  \ /  \ 
----
-- | clone this repo
-- | `cd ~/bspwm`
-- | `chmod +x install.sh`
-- | `./install.sh`
+> [!NOTE]
+> Clone this repo.
+
+> [!TIP]
+> Go to `~/bspwm`.
+
+> [!IMPORTANT]
+> Do `chmod +x install.sh`.
+
+> [!WARNING]
+> Run `./install.sh`.
+
+> [!CAUTION]
+> Have fun.
+
+
 ---
 - The `cpu.sh` can't run without sudo.
 ---
