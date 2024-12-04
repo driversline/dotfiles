@@ -1,9 +1,9 @@
-/ / /
+/  \ /  \ /  \ 
 ---
-- 1 | clone this repo
-- 2 | `cd ~/Downloads`
-- 3 | `chmod +x install.sh`
-- 4 | `./install.sh`
+| clone this repo
+| `cd ~/Downloads`
+| `chmod +x install.sh`
+| `./install.sh`
 ---
 - The `cpu.sh` can't run without sudo.
 ---
