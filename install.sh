@@ -24,12 +24,12 @@ for dir in "${directories[@]}"; do
 done
 
 declare -A files_to_move=(
-    ["$HOME/Downloads/dotfiles/bspwmrc"]="$HOME/.config/bspwm"
-    ["$HOME/Downloads/dotfiles/sxhkdrc"]="$HOME/.config/bspwm"
-    ["$HOME/Downloads/dotfiles/picom.conf"]="$HOME/.config/bspwm"
-    ["$HOME/Downloads/dotfiles/alacritty.toml"]="$HOME/.config/alacritty"
-    ["$HOME/Downloads/wallpapers/Night.jpg"]="$HOME/wallpapers"
-    ["$HOME/Downloads/dotfiles/.xsession"]="$HOME/"
+    ["$HOME/bspwm/dotfiles/bspwmrc"]="$HOME/.config/bspwm"
+    ["$HOME/bspwm/dotfiles/sxhkdrc"]="$HOME/.config/bspwm"
+    ["$HOME/bspwm/dotfiles/picom.conf"]="$HOME/.config/bspwm"
+    ["$HOME/bspwm/dotfiles/alacritty.toml"]="$HOME/.config/alacritty"
+    ["$HOME/bspwm/wallpapers/waves.jpg"]="$HOME/wallpapers"
+    ["$HOME/bspwm/dotfiles/.xsession"]="$HOME/"
 )
 
 for src in "${!files_to_move[@]}"; do
@@ -39,8 +39,8 @@ done
 declare -A files_to_chmod=(
     ["$HOME/.config/bspwm/bspwmrc"]=1
     ["$HOME/.xsession"]=1
-    ["$HOME/Downloads/scripts/*.sh"]=1
-    ["$HOME/Downloads/firefox/*.sh"]=1
+    ["$HOME/bspwm/scripts/*.sh"]=1
+    ["$HOME/bspwm/firefox/*.sh"]=1
 )
 
 for file in "${!files_to_chmod[@]}"; do
