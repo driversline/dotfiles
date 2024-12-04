@@ -1,7 +1,7 @@
 /  \ /  \ /  \ 
 ---
 - | clone this repo
-- | `cd ~/Downloads/bspwm`
+- | `cd ~/bspwm`
 - | `chmod +x install.sh`
 - | `./install.sh`
 ---
