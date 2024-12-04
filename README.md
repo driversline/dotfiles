@@ -1,23 +1,21 @@
 > [!NOTE]
-> Clone this repo.
+> Components:
+- Terminal: Alacritty
+- Environment: X11
+- Compositor: Picom
 
 > [!TIP]
-> Go to `~/bspwm`.
+> Simple bspwm dotfiles.
 
 > [!IMPORTANT]
+> Go to `~/bspwm`.
 > Do `chmod +x install.sh`.
-
-> [!WARNING]
 > Run `./install.sh`.
 
+> [!WARNING]
+> Not testing sience 4 Dec. 2024
+
 > [!CAUTION]
-> Have fun.
-
-
----
-- The `cpu.sh` can't run without sudo.
----
-- Run `display.sh` and `cursor.sh` after first launch in GUI session.
----
-- Run `firefox-custom.sh` after first opening of regular firefox.
----
+> Run `firefox-custom.sh` after first opening of regular firefox.
+> The `cpu.sh` can't run without sudo.
+> Run `display.sh` and `cursor.sh` after first launch in GUI session.
