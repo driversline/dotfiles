@@ -47,7 +47,7 @@ for file in "${!files_to_chmod[@]}"; do
     chmod +x $file
 done
 
-echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | minecraft-launcher\n6 | openrgb"
+echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | openrgb"
 
 read -p "Enter package numbers for installation: " -a selected_additional_indices
 
@@ -56,8 +56,7 @@ declare -A package_commands=(
     [2]="yay -S --noconfirm cava"
     [3]="yay -S --noconfirm spotify"
     [4]="sudo pacman -S --noconfirm neofetch"
-    [5]="yay -S --noconfirm minecraft-launcher"
-    [6]="yay -S --noconfirm openrgb"
+    [5]="yay -S --noconfirm openrgb"
 )
 
 for index in "${selected_additional_indices[@]}"; do
