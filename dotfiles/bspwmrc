@@ -1,5 +1,5 @@
 #!/bin/bash
-bspc monitor -d I II III
+bspc monitor -d I II III IV V
 bspc config focus_follows_pointer true
 bspc config border_width 0
 bspc config window_gap 2
