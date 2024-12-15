@@ -3,7 +3,7 @@
 > 
 > Terminal: Alacritty
 > 
-> Environment: X11
+> Environment: X11 [ BSPWM ]
 > 
 > Compositor: Picom
 
