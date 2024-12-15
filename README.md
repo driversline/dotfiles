@@ -7,9 +7,6 @@
 > 
 > Compositor: Picom
 
-> [!TIP]
-> Simple bspwm dotfiles.
-
 > [!IMPORTANT]
 > Go to `~/bspwm`.
 > 
@@ -18,7 +15,7 @@
 > Run `./install.sh`.
 
 > [!WARNING]
-> Not testing sience 4 Dec. 2024
+> none
 
 > [!CAUTION]
 > Run `firefox-custom.sh` after first opening of regular firefox.
