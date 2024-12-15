@@ -1,5 +1,5 @@
 > [!NOTE]
-> Components:
+> Components
 > 
 > Terminal: Alacritty
 > 
@@ -8,18 +8,18 @@
 > Compositor: Picom
 
 > [!IMPORTANT]
-> Go to `~/bspwm`.
+> `~/bspwm`.
 > 
-> Do `chmod +x install.sh`.
+> `chmod +x install.sh`.
 > 
-> Run `./install.sh`.
+> `./install.sh`.
 
 > [!WARNING]
 > none
 
 > [!CAUTION]
-> Run `firefox-custom.sh` after first opening of regular firefox.
+> run `firefox-custom.sh` after first opening of regular firefox.
 > 
-> The `cpu.sh` can't run without sudo.
+> the `cpu.sh` can't run without sudo.
 > 
-> Run `display.sh` and `cursor.sh` after first launch in GUI session.
+> run `display.sh` and `cursor.sh` after first launch in GUI session.
