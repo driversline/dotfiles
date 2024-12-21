@@ -8,6 +8,9 @@
 > Compositor: Picom
 
 > [!IMPORTANT]
+>
+> for 1920 x 1080
+>
 > `~/bspwm`.
 > 
 > `chmod +x install.sh`.
