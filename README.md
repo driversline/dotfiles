@@ -1,20 +1,13 @@
-> [!test]
+> [!NOTE]
 > Components
 > 
-> Terminal: Alacritty
-> 
-> Environment: X11 [ BSPWM ]
-> 
-> Compositor: Picom
+> Environment: X11 [ BSPWM ] / Picom
 
 > [!IMPORTANT]
+> bspwmrc for 1920x1080
 >
-> 1920 x 1080
->
-> `~/bspwm`.
-> 
-> `chmod +x install.sh`.
-> 
+> `~/bspwm`,
+> `chmod +x install.sh`,
 > `./install.sh`.
 
 > [!WARNING]
