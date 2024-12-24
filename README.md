@@ -1,6 +1,4 @@
 > [!NOTE]
-> Components
-> 
 > Environment: X11 [ BSPWM ] / Picom
 
 > [!IMPORTANT]
