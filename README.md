@@ -6,9 +6,7 @@
 > [!IMPORTANT]
 > bspwmrc for 1920x1080
 >
-> `~/bspwm`,
-> `chmod +x install.sh`,
-> `./install.sh`.
+> `~/bspwm`, `chmod +x install.sh`, `./install.sh`.
 
 > [!WARNING]
 > none
