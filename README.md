@@ -12,6 +12,4 @@
 > [!CAUTION]
 > run `firefox-custom.sh` after first opening of regular firefox.
 > 
-> the `cpu.sh` can't run without sudo.
-> 
-> run `display.sh` and `cursor.sh` after first launch in GUI session.
+> `display.sh` , `cursor.sh` no for cli session.
