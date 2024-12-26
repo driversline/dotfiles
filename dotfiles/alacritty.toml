@@ -17,3 +17,7 @@ style = "Regular"
 
 [window]
 padding = { x = 3, y = 3 }
+
+[colors]
+[colors.primary]
+background = '0x1C1C1C'
