@@ -22,4 +22,6 @@ echo -e '[Settings]\ngtk-cursor-theme-name=Nordzy-cursors-white' >> ~/.config/gt
 
 echo 'xsetroot -cursor_name left_ptr' >> ~/.config/bspwm/bspwmrc
 
+echo "Excellent."
+
 exit 0
