@@ -4,9 +4,9 @@ sudo pacman -S --noconfirm gtk2 gtk3
 
 mkdir -p ~/.local/share/icons
 
-tar xvf ~/Downloads/cursors/Nordzy-cursors-white.tar.gz -C ~/.local/share/icons
+tar xvf ~/bspwm/cursors/Nordzy-cursors-white.tar.gz -C ~/.local/share/icons
 
-sudo tar xvf ~/Downloads/cursors/Nordzy-cursors-white.tar.gz -C /usr/share/icons
+sudo tar xvf ~/bspwm/cursors/Nordzy-cursors-white.tar.gz -C /usr/share/icons
 
 mkdir -p ~/.config/gtk-3.0
 
