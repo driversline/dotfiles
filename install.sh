@@ -28,7 +28,7 @@ declare -A files_to_move=(
     ["$HOME/bspwm/dotfiles/sxhkdrc"]="$HOME/.config/bspwm"
     ["$HOME/bspwm/dotfiles/picom.conf"]="$HOME/.config/bspwm"
     ["$HOME/bspwm/dotfiles/alacritty.toml"]="$HOME/.config/alacritty"
-    ["$HOME/bspwm/wallpapers/waves.jpg"]="$HOME/wallpapers"
+    ["$HOME/bspwm/wallpapers/sky.jpg"]="$HOME/wallpapers"
     ["$HOME/bspwm/dotfiles/.xsession"]="$HOME/"
 )
 
