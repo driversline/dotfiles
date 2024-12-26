@@ -16,7 +16,6 @@ directories=(
     "$HOME/.config/bspwm"
     "$HOME/.config/picom"
     "$HOME/.config/alacritty"
-    "$HOME/wallpapers"
 )
 
 for dir in "${directories[@]}"; do
@@ -28,7 +27,6 @@ declare -A files_to_move=(
     ["$HOME/bspwm/dotfiles/sxhkdrc"]="$HOME/.config/bspwm"
     ["$HOME/bspwm/dotfiles/picom.conf"]="$HOME/.config/bspwm"
     ["$HOME/bspwm/dotfiles/alacritty.toml"]="$HOME/.config/alacritty"
-    ["$HOME/bspwm/wallpapers/*.jpg"]="$HOME/wallpapers"
     ["$HOME/bspwm/dotfiles/.xsession"]="$HOME/"
 )
 
