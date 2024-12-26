@@ -23,4 +23,6 @@ else
     echo "Monitor $OUTPUT not found."
 fi
 
+echo "Excellent."
+
 exit 0
