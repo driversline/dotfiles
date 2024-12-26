@@ -1,5 +1,5 @@
 > [!NOTE]
-> Environment: X11 [ BSPWM ] / Picom
+> Xorg | X11
 
 > [!IMPORTANT]
 > bspwmrc for 1920x1080
