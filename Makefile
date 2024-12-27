@@ -36,7 +36,7 @@ install:
 		chmod +x "$file"; \
 	done
 
-	@echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | openrgb\n6 | openjdk\n7 | gradle"
+	@echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | openrgb\n6 | openjdk\n7 | gradle\n8 | vscode"
 
 	@read -p "Enter package numbers for installation: " -a selected_additional_indices; \
 	declare -A package_commands=( \
@@ -47,6 +47,7 @@ install:
 		[5]="yay -S --noconfirm openrgb" \
 		[6]="sudo pacman -S jdk-openjdk" \
 		[7]="sudo pacman -S gradle" \
+		[8]="sudo pacman -S vscode" \
 	); \
 	for index in ${selected_additional_indices[@]}; do \
 		if [[ -n "${package_commands[$index]}" ]]; then \
