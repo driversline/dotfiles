@@ -9,4 +9,4 @@
 **`warn`**
 > run `firefox-custom.sh` after first opening of regular firefox
 > 
-> `display.sh` , `cursor.sh` no for cli session
+> `display.sh` , `cursor.sh` no run in tty
