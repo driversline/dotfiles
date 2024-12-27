@@ -1,14 +1,14 @@
 F1
   alacritty
 super + r
-  ranger
+  alacritty -e ranger
 super + m
   minecraft-launcher
 super + c
   alacritty -e cava
 super + q
   firefox
-F8 + F9
+F8
   poweroff
 super + Left
   bspc desktop -f prev
