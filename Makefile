@@ -1,5 +1,7 @@
 DIRECTORIES = $(HOME)/.config/bspwm $(HOME)/.config/picom $(HOME)/.config/alacritty
 
+NIX = $(HOME)/bspwm/nix/package.nix
+
 all: install
 
 install:
@@ -26,8 +28,7 @@ install:
 		chmod +x "$file"; \
 	done
 
-	@echo "Installing packages with Nix..."
-	nix-shell nix/package.nix --run "echo 'Nix environment set up'"
+	nix-shell $(NIX)
 
 	@echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | openrgb\n6 | openjdk\n7 | gradle"
 
