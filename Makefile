@@ -1,17 +1,8 @@
-PACKAGES = bspwm alacritty sxhkd ranger neovim picom feh gnome-keyring xorg-xsetroot xorg-xrandr ttf-dejavu
 DIRECTORIES = $(HOME)/.config/bspwm $(HOME)/.config/picom $(HOME)/.config/alacritty
 
 all: install
 
 install:
-	@set -e; \
-	install_package() { \
-		pacman -Qs "$1" > /dev/null || sudo pacman -S --noconfirm "$1"; \
-	}; \
-	for pkg in $(PACKAGES); do \
-		install_package "$pkg"; \
-	done
-
 	@for dir in $(DIRECTORIES); do \
 		mkdir -p "$dir"; \
 	done
@@ -34,6 +25,9 @@ install:
 		$(HOME)/bspwm/firefox/*.sh; do \
 		chmod +x "$file"; \
 	done
+
+	@echo "Installing packages with Nix..."
+	nix-shell nix/package.nix --run "echo 'Nix environment set up'"
 
 	@echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | openrgb\n6 | openjdk\n7 | gradle"
 
