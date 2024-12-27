@@ -1,5 +1,5 @@
 **`install`**
-> Dependencies: `make`, `git`
+> requests: `make`, `git`
 
 **`important`**
 > bspwmrc for `1920x1080`
