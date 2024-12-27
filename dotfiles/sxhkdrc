@@ -8,6 +8,8 @@ super + c
   alacritty -e cava
 super + q
   firefox
+super + v
+  code
 F8
   poweroff
 super + Left
