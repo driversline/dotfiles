@@ -1,4 +1,5 @@
 PACKAGES = bspwm alacritty sxhkd ranger neovim picom feh gnome-keyring xorg-xsetroot xorg-xrandr ttf-dejavu
+
 DIRECTORIES = $(HOME)/.config/bspwm $(HOME)/.config/picom $(HOME)/.config/alacritty
 
 all: install
