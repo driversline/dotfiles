@@ -10,6 +10,8 @@ super + q
   firefox
 super + v
   code
+super + p
+  pkill -USR1 -x sxhkd
 F8
   poweroff
 super + Left
