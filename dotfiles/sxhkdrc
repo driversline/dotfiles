@@ -32,3 +32,7 @@ super + alt + Left
   bspc node -d prev
 super + alt + Right
   bspc node -d next
+super + Prior
+  pactl set-sink-volume @DEFAULT_SINK@ +5%
+super + Next
+  pactl set-sink-volume @DEFAULT_SINK@ -5%
