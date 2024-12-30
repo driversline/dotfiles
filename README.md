@@ -6,7 +6,7 @@
 **`important`**
 > bspwmrc for `1920x1080`
 > 
-> `~/bspwm`, `make` | `~/bspwm`, `chmod +x install.sh`, `./install.sh`
+> `make` | `chmod +x install.sh`, `./install.sh`
 
 **`warn`**
 > run `firefox-custom.sh` after first opening of regular firefox
