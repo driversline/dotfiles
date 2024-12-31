@@ -1,7 +1,5 @@
 **`install`**
-> requests: `make`, `git`
->
-> Makefile not tested / 27 Dec. 2024
+> requests: `git`
 
 **`important`**
 > bspwmrc for `1920x1080`
