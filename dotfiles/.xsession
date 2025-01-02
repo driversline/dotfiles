@@ -5,4 +5,5 @@ feh --bg-scale ~/bspwm/wallpapers/*.jpg &
 gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg
 setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle"
 systemctl --user start pipewire
+xset -led 2 -led 1 -led 3
 exec bspwm
