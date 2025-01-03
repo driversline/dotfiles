@@ -1,0 +1,6 @@
+[Unit]
+Description=none
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'pacman -Rns $(pacman -Qdtq) && pacman -Scc --noconfirm && fstrim --all'
