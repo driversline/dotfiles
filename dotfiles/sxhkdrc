@@ -8,6 +8,8 @@ super + c
   alacritty -e cava
 super + q
   firefox
+super + o
+  flameshot gui
 super + v
   code
 super + p
