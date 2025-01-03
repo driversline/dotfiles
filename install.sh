@@ -39,13 +39,14 @@ declare -A files_to_chmod=(
     ["$HOME/.xsession"]=1
     ["$HOME/bspwm/scripts/*.sh"]=1
     ["$HOME/bspwm/firefox/*.sh"]=1
+    ["$HOME/bspwm/service/*.sh"]=1
 )
 
 for file in "${!files_to_chmod[@]}"; do
     chmod +x $file
 done
 
-echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | openrgb\n6 | openjdk\n7 | gradle\8 | vscode"
+echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | openrgb\n6 | openjdk\n7 | gradle\8 | vscode\9 | flameshot"
 
 read -p "Enter package numbers for installation: " -a selected_additional_indices
 
@@ -58,6 +59,7 @@ declare -A package_commands=(
     [6]="sudo pacman -S jdk-openjdk"
     [7]="sudo pacman -S gradle"
     [8]="sudo pacman -S vscode"
+    [9]="sudo pacman -S flameshot"
 )
 
 for index in "${selected_additional_indices[@]}"; do
