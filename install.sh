@@ -46,7 +46,7 @@ for file in "${!files_to_chmod[@]}"; do
     chmod +x $file
 done
 
-echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | openrgb\n6 | openjdk\n7 | gradle\8 | vscode\9 | flameshot"
+echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | openrgb\n6 | openjdk\n7 | gradle\n8 | vscode\n9 | flameshot"
 
 read -p "Enter package numbers for installation: " -a selected_additional_indices
 
