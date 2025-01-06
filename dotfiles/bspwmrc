@@ -6,6 +6,12 @@ bspc config window_gap 0
 bspc rule -a firefox state=fullscreen, desktop=II
 bspc rule -a code-oss state=fullscreen, desktop=I
 xsetroot -cursor_name left_ptr
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
+bspc config normalize_border_on_focus false
+bspc config single_monocle true
+bspc config borderless_monocle true
+bspc config gapless_monocle true
 bspc mousebind super + right mouse resize
 read width height < <(xrandr | grep '*' | awk '{print $1}' | head -n 1 | sed 's/x/ /')
 bspc rule -a Alacritty state=floating, rectangle=$((width / 2))x$((height / 3))+$(($width / 4))+$((height / 3))
