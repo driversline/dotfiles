@@ -1,12 +1,6 @@
-**`install`**
-> requests: `git`
-
-**`important`**
-> bspwmrc for `1920x1080`
+**`!`**
+> run `firefox-custom.sh` after the first launch of regular Firefox
+>
+> `ly.sh` might not work as you expected
 > 
-> `chmod +x install.sh`, `./install.sh`
-
-**`warn`**
-> run `firefox-custom.sh` after first opening of regular firefox
-> 
-> `display.sh` , `cursor.sh` no run in tty
+> `display.sh` and `cursor.sh` do not run in TTY
