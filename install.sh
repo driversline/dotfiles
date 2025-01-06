@@ -6,7 +6,7 @@ install_package() {
     pacman -Qs "$1" > /dev/null || sudo pacman -S --noconfirm "$1"
 }
 
-packages=(bspwm alacritty sxhkd ranger neovim picom feh gnome-keyring xorg-xsetroot xorg-xrandr ttf-dejavu)
+packages=(bspwm alacritty sxhkd ranger neovim feh gnome-keyring xorg-xsetroot xorg-xrandr ttf-dejavu)
 
 for pkg in "${packages[@]}"; do
     install_package "$pkg"
@@ -14,7 +14,6 @@ done
 
 directories=(
     "$HOME/.config/bspwm"
-    "$HOME/.config/picom"
     "$HOME/.config/alacritty"
 )
 
@@ -25,7 +24,6 @@ done
 declare -A files_to_move=(
     ["$HOME/bspwm/dotfiles/bspwmrc"]="$HOME/.config/bspwm"
     ["$HOME/bspwm/dotfiles/sxhkdrc"]="$HOME/.config/bspwm"
-    ["$HOME/bspwm/dotfiles/picom.conf"]="$HOME/.config/bspwm"
     ["$HOME/bspwm/dotfiles/alacritty.toml"]="$HOME/.config/alacritty"
     ["$HOME/bspwm/dotfiles/.xsession"]="$HOME/"
 )
