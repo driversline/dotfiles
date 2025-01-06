@@ -1,8 +1,8 @@
 [[ $- != *i* ]] && return
 
-COLOR1='\033[1;37m'  # Белый
-COLOR2='\033[1;97m'  # Темно-белый
-RESET='\033[0m'      # Сброс цвета
+COLOR1='\033[1;37m'
+COLOR2='\033[1;97m'
+RESET='\033[0m'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
