@@ -1,27 +1,27 @@
 super + w
   alacritty
-super + r
-  alacritty -e ranger
 super + m
   minecraft-launcher
-super + c
-  alacritty -e cava
 super + q
   firefox
-super + o
+super + d
   flameshot gui
 super + v
   code
+super + r
+  alacritty -e ranger
+super + c
+  alacritty -e cava
+super + o
+  bspc wm -r
 super + p
   pkill -USR1 -x sxhkd
-F8
-  poweroff
+super + x
+  bspc node -c
 super + Left
   bspc desktop -f prev
 super + Right
   bspc desktop -f next
-super + x
-  bspc node -c
 ctrl + Up
   bspc node -s north
 ctrl + Down
