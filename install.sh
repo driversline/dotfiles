@@ -6,7 +6,18 @@ install_package() {
     pacman -Qs "$1" > /dev/null || sudo pacman -S --noconfirm "$1"
 }
 
-packages=(bspwm alacritty sxhkd ranger neovim feh gnome-keyring xorg-xsetroot xorg-xrandr ttf-dejavu)
+packages=(
+    bspwm
+    alacritty
+    sxhkd
+    ranger
+    neovim
+    feh
+    gnome-keyring
+    xorg-xsetroot
+    xorg-xrandr
+    ttf-dejavu
+)
 
 for pkg in "${packages[@]}"; do
     install_package "$pkg"
@@ -68,8 +79,8 @@ for index in "${selected_additional_indices[@]}"; do
     fi
 done
 
-sudo pacman -S --noconfirm ly && systemctl enable ly.service
+sudo pacman -S --noconfirm ly && sudo systemctl enable ly.service
 
-echo "Excellent. You can reboot system."
+echo "Excellent. You can reboot the system now."
 
 exit 0
