@@ -1,18 +1,32 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm cpupower
+set -e
 
-cpupower frequency-info
+install_cpupower() {
+    sudo pacman -S --noconfirm cpupower
+}
 
-echo -n "Select frequency (default 2.4GHz | e.g. 2.67GHz): "
-read frequency
-frequency=${frequency:-2.4GHz}
+display_frequency_info() {
+    cpupower frequency-info
+}
 
-XRANDR_LINE="cpupower frequency-set -f $frequency"
-sed -i "/^exec bspwm/i $XRANDR_LINE" ~/.xsession
+set_frequency() {
+    echo -n "Select frequency (default 2.4GHz | e.g. 2.67GHz): "
+    read frequency
+    frequency=${frequency:-2.4GHz}
 
-sudo cpupower frequency-set -f "$frequency"
+    XRANDR_LINE="cpupower frequency-set -f $frequency"
+    sed -i "/^exec bspwm/i $XRANDR_LINE" ~/.xsession
 
-echo "Excellent."
+    sudo cpupower frequency-set -f "$frequency"
+}
+
+main() {
+    install_cpupower
+    display_frequency_info
+    set_frequency
+}
+
+main
 
 exit 0
