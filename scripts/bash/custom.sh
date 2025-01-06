@@ -25,6 +25,12 @@ move_file() {
     fi
 }
 
-remove_file "$HOME_DIR/$BASHRC_FILE"
-move_file "$BASHRC_DIR/$BASHRC_FILE" "$HOME_DIR/$BASHRC_FILE"
-. "$HOME_DIR/$BASHRC_FILE"
+main() {
+    remove_file "$HOME_DIR/$BASHRC_FILE"
+    move_file "$BASHRC_DIR/$BASHRC_FILE" "$HOME_DIR/$BASHRC_FILE"
+    . "$HOME_DIR/$BASHRC_FILE"
+}
+
+main
+
+exit 0
