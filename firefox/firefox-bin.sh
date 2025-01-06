@@ -1,15 +1,49 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm curl tar alsa-lib gtk3
+set -e
 
-curl -L -o firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US&_gl=1*1irdmrv*_ga*Nzg1NTczMTE0LjE3Mjk5Mzc4NDA.*_ga_MQ7767QQQW*MTcyOTkzNzg0MC4xLjEuMTcyOTkzODA0MS4wLjAuMA.."
+REQUIRED_PACKAGES=(curl tar alsa-lib gtk3)
+FIREFOX_URL="https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US"
+TEMP_DIR=$(mktemp -d)
+ARCHIVE_NAME="firefox.tar.bz2"
 
-tar xjf firefox.tar.bz2
+install_packages() {
+    for pkg in "${REQUIRED_PACKAGES[@]}"; do
+        if ! pacman -Qs "$pkg" > /dev/null; then
+            sudo pacman -S --noconfirm "$pkg"
+        fi
+    done
+}
 
-sudo mv firefox /opt
+download_firefox() {
+    curl -L -o "$TEMP_DIR/$ARCHIVE_NAME" "$FIREFOX_URL"
+}
 
-sudo ln -s /opt/firefox/firefox /usr/local/bin/firefox
+extract_firefox() {
+    tar -xjf "$TEMP_DIR/$ARCHIVE_NAME" -C "$TEMP_DIR"
+}
 
-echo "Excellent."
+move_firefox() {
+    sudo mv "$TEMP_DIR/firefox" /opt
+}
+
+create_symlink() {
+    sudo ln -sf /opt/firefox/firefox /usr/local/bin/firefox
+}
+
+cleanup() {
+    rm -rf "$TEMP_DIR"
+}
+
+main() {
+    install_packages
+    download_firefox
+    extract_firefox
+    move_firefox
+    create_symlink
+    cleanup
+}
+
+main
 
 exit 0
