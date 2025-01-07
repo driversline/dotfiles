@@ -33,10 +33,15 @@
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    A[install.sh] --> B[Install Packages] --> C[bspwm, alacritty, sxhkd, ranger, neovim, feh, gnome-keyring, xorg-xsetroot, xorg-xrandr, ttf-dejavu];
+    A --> D[Create Directories] --> E["$HOME/.config/bspwm", "$HOME/.config/alacritty"];
+    A --> F[Move Files] --> G["$HOME/bspwm/dotfiles/bspwmrc" --> "$HOME/.config/bspwm"];
+    F --> H["$HOME/bspwm/dotfiles/sxhkdrc" --> "$HOME/.config/bspwm"];
+    F --> I["$HOME/bspwm/dotfiles/alacritty.toml" --> "$HOME/.config/alacritty"];
+    F --> J["$HOME/bspwm/dotfiles/.xsession" --> "$HOME/"];
+    A --> K[Set Permissions] --> L["$HOME/.config/bspwm/bspwmrc", "$HOME/.xsession", "$HOME/bspwm/scripts/*.sh", "$HOME/bspwm/firefox/*.sh", "$HOME/bspwm/service/*.sh"];
+    A --> M[Install Additional Packages] --> N[yay, cava, spotify, neofetch, openrgb, openjdk, gradle, vscode, flameshot];
+    A --> O[Enable ly.service];
 ```
 
 ```stl
