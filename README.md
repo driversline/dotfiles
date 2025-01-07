@@ -10,7 +10,9 @@
 
 |-------------------|--------------------------------|
 | alacritty         | Terminal emulator             |
+|-------------------|--------------------------------|
 | sxhkd             | Hotkey daemon                 |
+|-------------------|--------------------------------|
 | ranger            | File manager                  |
 | neovim            | Text editor                   |
 | feh               | Image viewer                  |
