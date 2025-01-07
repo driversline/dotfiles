@@ -24,39 +24,39 @@ graph TD;
 
 ```stl
 solid star
-  facet normal 0 0 0
+  facet normal 0 0 1
     outer loop
       vertex 0 0 0
-      vertex 1 3 0
+      vertex 1 2 0
+      vertex -1 2 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -1 2 0
+      vertex -2 0 0
+      vertex 0 1 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -2 0 0
+      vertex -1 -2 0
+      vertex 0 -1 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex -1 -2 0
+      vertex 1 -2 0
+      vertex 0 -1 0
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 1 -2 0
       vertex 2 0 0
-    endloop
-  endfacet
-  facet normal 0 0 0
-    outer loop
-      vertex 2 0 0
-      vertex 3 3 0
-      vertex 4 0 0
-    endloop
-  endfacet
-  facet normal 0 0 0
-    outer loop
-      vertex 4 0 0
-      vertex 5 3 0
-      vertex 6 0 0
-    endloop
-  endfacet
-  facet normal 0 0 0
-    outer loop
-      vertex 6 0 0
-      vertex 7 3 0
-      vertex 8 0 0
-    endloop
-  endfacet
-  facet normal 0 0 0
-    outer loop
-      vertex 8 0 0
-      vertex 9 3 0
-      vertex 10 0 0
+      vertex 0 1 0
     endloop
   endfacet
 endsolid star
