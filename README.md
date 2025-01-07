@@ -8,13 +8,13 @@
 
 ```mermaid
 graph TD;
-    style bspwmrc fill:#161b22,stroke:#4b9df6,stroke-width:2px,rx:5,ry:5;
-    style sxhkdrc fill:#161b22,stroke:#4b9df6,stroke-width:2px,rx:5,ry:5;
-    style alacritty_toml fill:#161b22,stroke:#4b9df6,stroke-width:2px,rx:5,ry:5;
-    style xsession fill:#161b22,stroke:#4b9df6,stroke-width:2px,rx:5,ry:5;
-    style bspwm_config fill:#161b22,stroke:#4b9df6,stroke-width:2px,rx:5,ry:5;
-    style alacritty_config fill:#161b22,stroke:#4b9df6,stroke-width:2px,rx:5,ry:5;
-    style home fill:#161b22,stroke:#4b9df6,stroke-width:2px,rx:5,ry:5;
+    style bspwmrc fill:#161b22,stroke:#1a1c23,stroke-width:2px,rx:5,ry:5;
+    style sxhkdrc fill:#161b22,stroke:#1a1c23,stroke-width:2px,rx:5,ry:5;
+    style alacritty_toml fill:#161b22,stroke:#1a1c23,stroke-width:2px,rx:5,ry:5;
+    style xsession fill:#161b22,stroke:#1a1c23,stroke-width:2px,rx:5,ry:5;
+    style bspwm_config fill:#161b22,stroke:#1a1c23,stroke-width:2px,rx:5,ry:5;
+    style alacritty_config fill:#161b22,stroke:#1a1c23,stroke-width:2px,rx:5,ry:5;
+    style home fill:#161b22,stroke:#1a1c23,stroke-width:2px,rx:5,ry:5;
 
     bspwmrc["$HOME/bspwm/dotfiles/bspwmrc"] -->|move| bspwm_config["$HOME/.config/bspwm"]
     sxhkdrc["$HOME/bspwm/dotfiles/sxhkdrc"] -->|move| bspwm_config
