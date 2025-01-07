@@ -19,3 +19,22 @@
 | gnome-keyring     | Keyring manager               |
 |-------------------|--------------------------------|
 | ttf-dejavu        | Font                          |
+
+<details>
+<summary>components</summary>
+
+| package | about |
+|-----:|-----------|
+|     1| JavaScript|
+|     2| Python    |
+|     3| SQL       |
+
+</details>
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
