@@ -8,6 +8,8 @@
 
 ### Таблица пакетов
 
+| Пакет             | Описание                       |
+|-------------------|--------------------------------|
 | alacritty        | Terminal emulator             |
 | sxhkd            | Hotkey daemon                 |
 | ranger           | File manager                  |
