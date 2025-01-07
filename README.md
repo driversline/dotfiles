@@ -4,7 +4,8 @@
 > `ly.sh` might not work as you expected
 > 
 > `display.sh` and `cursor.sh` do not run in TTY
-
+> 
+|-------------------|--------------------------------|
 | alacritty         | Terminal emulator             |
 |-------------------|--------------------------------|
 | sxhkd             | Hotkey daemon                 |
