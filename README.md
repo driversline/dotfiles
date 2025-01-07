@@ -5,9 +5,11 @@
 > 
 > `display.sh` and `cursor.sh` do not run in TTY
 
-
-test
-
-\```
-sudo pacman -S package_name
-\```
+|-------------------|--------------------------------|
+| alacritty         | Terminal emulator              |
+| sxhkd             | Hotkey daemon                  |
+| ranger            | File manager                   |
+| neovim            | Text editor                    |
+| feh               | Image viewer                   |
+| gnome-keyring     | Keyring manager                |
+| ttf-dejavu        | Font                           |
