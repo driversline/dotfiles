@@ -4,3 +4,10 @@
 > `ly.sh` might not work as you expected
 > 
 > `display.sh` and `cursor.sh` do not run in TTY
+
+
+test
+
+\```
+sudo pacman -S package_name
+\```
