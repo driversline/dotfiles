@@ -39,6 +39,7 @@ graph TD;
     C-->D;
 ```
 
+```stl
 solid heart
   facet normal 0 0 1
     outer loop
@@ -69,3 +70,4 @@ solid heart
     endloop
   endfacet
 endsolid
+```
