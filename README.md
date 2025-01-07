@@ -23,41 +23,5 @@ graph TD;
 ```
 
 ```stl
-solid star
-  facet normal 0 0 1
-    outer loop
-      vertex 0 0 0
-      vertex 1 2 0
-      vertex -1 2 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -1 2 0
-      vertex -2 0 0
-      vertex 0 1 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -2 0 0
-      vertex -1 -2 0
-      vertex 0 -1 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex -1 -2 0
-      vertex 1 -2 0
-      vertex 0 -1 0
-    endloop
-  endfacet
-  facet normal 0 0 1
-    outer loop
-      vertex 1 -2 0
-      vertex 2 0 0
-      vertex 0 1 0
-    endloop
-  endfacet
-endsolid star
+
 ```
