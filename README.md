@@ -8,46 +8,16 @@
 
 ```mermaid
 graph TD;
-    A[install.sh] --> B[Install Packages] --> C[bspwm, alacritty, sxhkd, ranger, neovim, feh, gnome-keyring, xorg-xsetroot, xorg-xrandr, ttf-dejavu];
-    A --> D[Create Directories] --> E["$HOME/.config/bspwm", "$HOME/.config/alacritty"];
-    A --> F[Move Files] --> G["$HOME/bspwm/dotfiles/bspwmrc" --> "$HOME/.config/bspwm"];
-    F --> H["$HOME/bspwm/dotfiles/sxhkdrc" --> "$HOME/.config/bspwm"];
-    F --> I["$HOME/bspwm/dotfiles/alacritty.toml" --> "$HOME/.config/alacritty"];
-    F --> J["$HOME/bspwm/dotfiles/.xsession" --> "$HOME/"];
-    A --> K[Set Permissions] --> L["$HOME/.config/bspwm/bspwmrc", "$HOME/.xsession", "$HOME/bspwm/scripts/*.sh", "$HOME/bspwm/firefox/*.sh", "$HOME/bspwm/service/*.sh"];
-    A --> M[Install Additional Packages] --> N[yay, cava, spotify, neofetch, openrgb, openjdk, gradle, vscode, flameshot];
-    A --> O[Enable ly.service];
+    bspwmrc -->|move| .config/bspwm
+    sxhkdrc -->|move| .config/bspwm
+    alacritty.toml -->|move| .config/alacritty
+    .xsession -->|move| HOME
+    .bashrc -->|move| HOME
+    firefox -->|move| /opt
+    init.vim -->|move| .config/nvim
+    nvim-theme.vim -->|move| .config/nvim/colors
 ```
 
 ```stl
-solid heart
-  facet normal 0 0 1
-    outer loop
-      vertex 0 0 0
-      vertex 1 0 0
-      vertex 0 1 0
-    endloop
-  endfacet
-  facet normal 0 0 -1
-    outer loop
-      vertex 0 0 0
-      vertex 0 1 0
-      vertex 1 0 0
-    endloop
-  endfacet
-  facet normal 0 1 0
-    outer loop
-      vertex 0 1 0
-      vertex 1 0 0
-      vertex 1 1 0
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 1 0 0
-      vertex 0 0 0
-      vertex 1 1 0
-    endloop
-  endfacet
-endsolid
+
 ```
