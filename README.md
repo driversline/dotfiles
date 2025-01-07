@@ -23,48 +23,62 @@ graph TD;
 ```
 
 ```stl
-solid heart
-  facet normal 0 0 1
+solid rectangle
+  facet normal 0 0 0
     outer loop
       vertex 0 0 0
       vertex 1 0 0
-      vertex 0.5 1 0
+      vertex 1 0 1
     endloop
   endfacet
-  facet normal 0 0 -1
+  facet normal 0 0 0
     outer loop
       vertex 0 0 0
-      vertex 0.5 1 0
+      vertex 1 0 1
+      vertex 0 0 1
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 0 0 1
+      vertex 1 0 1
+      vertex 1 1 1
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 0 0 1
+      vertex 1 1 1
+      vertex 0 1 1
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 0 1 1
+      vertex 1 1 1
+      vertex 1 1 0
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 0 1 1
+      vertex 1 1 0
+      vertex 0 1 0
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 0 1 0
+      vertex 1 1 0
       vertex 1 0 0
     endloop
   endfacet
-  facet normal 0 1 0
+  facet normal 0 0 0
     outer loop
-      vertex 0.5 1 0
+      vertex 0 1 0
       vertex 1 0 0
-      vertex 0.5 0.5 0.5
-    endloop
-  endfacet
-  facet normal 0 -1 0
-    outer loop
-      vertex 0.5 0.5 0.5
-      vertex 1 0 0
-      vertex 0.5 1 0
-    endloop
-  endfacet
-  facet normal 1 0 0
-    outer loop
-      vertex 0.5 1 0
       vertex 0 0 0
-      vertex 0.5 0.5 0.5
     endloop
   endfacet
-  facet normal -1 0 0
-    outer loop
-      vertex 0.5 0.5 0.5
-      vertex 0 0 0
-      vertex 0.5 1 0
-    endloop
-  endfacet
-endsolid heart
+endsolid rectangle
 ```
