@@ -5,6 +5,8 @@
 > 
 > `display.sh` and `cursor.sh` do not run in TTY
 
+### Таблица пакетов
+| Пакет             | Описание                       |
 |-------------------|--------------------------------|
 | alacritty         | Terminal emulator              |
 | sxhkd             | Hotkey daemon                  |
