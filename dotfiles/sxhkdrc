@@ -8,6 +8,8 @@ super + d
   flameshot gui
 super + v
   code
+super + l
+  xset dpms force off
 super + r
   alacritty -e ranger
 super + c
