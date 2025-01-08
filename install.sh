@@ -17,6 +17,7 @@ packages=(
     xorg-xsetroot
     xorg-xrandr
     ttf-dejavu
+    fzf
 )
 
 for pkg in "${packages[@]}"; do
@@ -54,6 +55,8 @@ declare -A files_to_chmod=(
 for file in "${!files_to_chmod[@]}"; do
     chmod +x $file
 done
+
+$HOME/bspwm/scripts/display.sh
 
 echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | openrgb\n6 | openjdk\n7 | gradle\n8 | vscode\n9 | flameshot"
 
