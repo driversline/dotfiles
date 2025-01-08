@@ -42,7 +42,6 @@ validate_input() {
 apply_settings() {
     XRANDR_LINE="xrandr --output $OUTPUT --mode $SELECTED_RESOLUTION --rate $SELECTED_RATE"
     sed -i "/^exec bspwm/i $XRANDR_LINE" ~/.xsession
-    eval $XRANDR_LINE
 }
 
 main() {
