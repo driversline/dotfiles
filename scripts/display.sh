@@ -4,30 +4,37 @@ set -e
 
 list_monitors() {
     xrandr
-    echo "Available monitors:"
+    echo "Available monitors | Доступные мониторы "
     xrandr | grep " connected" | cut -d' ' -f1
 }
 
 get_user_input() {
-    read -p "Enter the monitor name (e.g., HDMI-0): " OUTPUT
-    if ! xrandr | grep -q "$OUTPUT"; then
-        echo "Monitor $OUTPUT not found."
+    local resolutions=("1280x720" "1366x768" "1600x900" "1920x1080" "2560x1440" "3840x2160")
+    local refresh_rates=("60" "75" "120" "144" "240")
+
+    OUTPUT=$(xrandr | grep " connected" | cut -d' ' -f1 | fzf --height 10 --border --prompt="Choose monitor | Выберите монитор ")
+    if [ -z "$OUTPUT" ]; then
+        echo "No monitor selected."
         exit 1
     fi
+
+    SELECTED_RESOLUTION=$(printf "%s\n" "${resolutions[@]}" | fzf --height 10 --border --prompt="Choose resolution | Выберите расширение ")
+    SELECTED_RATE=$(printf "%s\n" "${refresh_rates[@]}" | fzf --height 10 --border --prompt="Choose refresh rate | Выберите частоту обновления ")
     
-    read -p "Enter the desired resolution (e.g., 1920x1080): " SELECTED_RESOLUTION
-    read -p "Enter the desired refresh rate (e.g., 60): " SELECTED_RATE
-    SELECTED_RATE=${SELECTED_RATE:-60}
+    if [ -z "$SELECTED_RESOLUTION" ] || [ -z "$SELECTED_RATE" ]; then
+        echo "Invalid selection | Ошибка выбора"
+        exit 1
+    fi
 }
 
 validate_input() {
     if ! xrandr | grep -q "$SELECTED_RESOLUTION"; then
-        echo "Resolution $SELECTED_RESOLUTION is not available."
+        echo "Resolution $SELECTED_RESOLUTION is not available | Расширение $SELECTED_RESOLUTION недоступно"
         exit 1
     fi
     
     if ! xrandr | grep -q "${SELECTED_RATE}"; then
-        echo "Refresh rate $SELECTED_RATE is not available."
+        echo "Refresh rate $SELECTED_RATE is not available | Частота обновления $SELECTED_RATE недоступна"
         exit 1
     fi
 }
