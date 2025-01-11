@@ -1,3 +1,3 @@
 #!/bin/bash
-feh --bg-scale ~/bspwm/wallpapers/*.jpg &
+feh --bg-scale $HOME/bspwm/wallpapers/*.jpg &
 exec bspwm
