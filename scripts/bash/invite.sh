@@ -3,6 +3,7 @@
 set -e
 
 HOME_DIR="$HOME"
+DOTFILES_DIR="$HOME/bspwm/dotfiles"
 BASHRC_DIR="$HOME/bspwm/scripts/bash"
 BASHRC_FILE=".bashrc"
 
@@ -27,7 +28,7 @@ move_file() {
 
 main() {
     remove_file "$HOME_DIR/$BASHRC_FILE"
-    move_file "$BASHRC_DIR/$BASHRC_FILE" "$HOME_DIR/$BASHRC_FILE"
+    move_file "$DOTFILES_DIR/$BASHRC_FILE" "$HOME_DIR/$BASHRC_FILE"
     . "$HOME_DIR/$BASHRC_FILE"
 }
 
