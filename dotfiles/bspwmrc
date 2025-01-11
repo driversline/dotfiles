@@ -11,5 +11,9 @@ bspc config single_monocle true
 bspc config borderless_monocle true
 bspc config gapless_monocle true
 bspc mousebind super + right mouse resize
+xset -dpms
+xset s off
+gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg
+setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle"
 read width height < <(xrandr | grep '*' | awk '{print $1}' | head -n 1 | sed 's/x/ /')
 bspc rule -a Alacritty state=floating, rectangle=$((width / 2))x$((height / 3))+$(($width / 4))+$((height / 3))
