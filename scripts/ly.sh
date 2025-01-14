@@ -7,7 +7,7 @@ install_zig() {
 }
 
 disable_ly_service() {
-    systemctl disable ly.service
+    sudo systemctl disable ly.service
 }
 
 clone_and_build_ly() {
