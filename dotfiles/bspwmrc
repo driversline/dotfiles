@@ -3,7 +3,6 @@ bspc monitor -d I II III IV V
 bspc config focus_follows_pointer true
 bspc config border_width 0
 bspc config window_gap 0
-xsetroot -cursor_name left_ptr
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 bspc config normalize_border_on_focus false
