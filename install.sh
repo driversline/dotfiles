@@ -49,15 +49,11 @@ declare -A files_to_chmod=(
     ["$HOME/.xsession"]=1
     ["$HOME/bspwm/scripts/*.sh"]=1
     ["$HOME/bspwm/firefox/*.sh"]=1
-    ["$HOME/bspwm/service/*.sh"]=1
 )
 
 for file in "${!files_to_chmod[@]}"; do
     chmod +x $file
 done
-
-source $HOME/bspwm/scripts/display.sh
-source $HOME/bspwm/scripts/cursor.sh
 
 echo -e "Additional packages for installation:\n1 | yay\n2 | cava\n3 | spotify\n4 | neofetch\n5 | openrgb\n6 | openjdk\n7 | gradle\n8 | vscode\n9 | flameshot"
 
