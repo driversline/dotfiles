@@ -2,8 +2,6 @@
 
 set -e
 
-#!/bin/bash
-
 sudo pacman -S --noconfirm gtk2 gtk3
 
 mkdir -p ~/.local/share/icons
