@@ -69,10 +69,10 @@ declare -A package_commands=(
     [3]="yay -S --noconfirm spotify"
     [4]="sudo pacman -S --noconfirm neofetch"
     [5]="yay -S --noconfirm openrgb"
-    [6]="sudo pacman -S jdk-openjdk"
-    [7]="sudo pacman -S gradle"
-    [8]="sudo pacman -S vscode"
-    [9]="sudo pacman -S flameshot"
+    [6]="sudo pacman -S --noconfirm jdk-openjdk"
+    [7]="sudo pacman -S --noconfirm gradle"
+    [8]="sudo pacman -S --noconfirm vscode"
+    [9]="sudo pacman -S --noconfirm flameshot"
 )
 
 for index in "${selected_additional_indices[@]}"; do
