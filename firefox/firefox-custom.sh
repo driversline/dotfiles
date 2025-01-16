@@ -16,7 +16,7 @@ install_theme() {
     
     if [ -d "$install_dir" ]; then
         cd "$install_dir"
-        ./install.sh
+        ./install.sh -m
     else
         echo "Installation directory not found: $install_dir"
         exit 1
