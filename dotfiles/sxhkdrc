@@ -41,12 +41,12 @@ super + Prior
 super + Next
   pactl set-sink-volume @DEFAULT_SINK@ -5%
 super + shift + Prior
-    mpc prev
+  mpc prev
 super + shift + Next
-    mpc next
+  mpc next
 super + Return
-    mpc toggle
+  mpc toggle
 super + shift + k
-    mpc repeat on
+  mpc repeat on
 super + shift + j
-    mpc repeat off
+  mpc repeat off
