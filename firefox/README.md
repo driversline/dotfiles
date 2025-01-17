@@ -1,1 +1,1 @@
-> author custom theme - https://github.com/vinceliuice/WhiteSur-firefox-theme
+> author firefox theme - https://github.com/vinceliuice/WhiteSur-firefox-theme
