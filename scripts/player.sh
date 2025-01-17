@@ -3,14 +3,16 @@
 set -e
 
 declare -A files_to_move=(
-    ["$HOME/bspwm/dotfiles/mpd.conf"]="$HOME/.config/mpd"
-    ["$HOME/bspwm/dotfiles/database"]="$HOME/.config/mpd"
-    ["$HOME/bspwm/dotfiles/config"]="$HOME/.config/ncmpcpp"
+    ["$HOME/bspwm/dotfiles/player/mpd.conf"]="$HOME/.config/mpd"
+    ["$HOME/bspwm/dotfiles/player/database"]="$HOME/.config/mpd"
+    ["$HOME/bspwm/dotfiles/player/config"]="$HOME/.config/ncmpcpp"
+    ["$HOME/bspwm/dotfiles/player/*.mp3"]="$HOME/Music"
 )
 
 directories=(
     "$HOME/.config/mpd"
     "$HOME/.config/ncmpcpp"
+    "$HOME/Music"
 )
 
 create_directories() {
