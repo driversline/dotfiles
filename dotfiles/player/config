@@ -1,0 +1,23 @@
+ncmpcpp_directory = "~/.config/ncmpcpp"
+lyrics_directory = "~/Music"
+mpd_music_dir = "~/Music"
+
+song_status_format = "%t"
+song_list_format = "$1$8$(255)%t$R  $(255)$R  %l $1"
+startup_screen = "browser"
+playlist_display_mode = columns
+
+playlist_disable_highlight_delay = "1"
+message_delay_time= "1"
+
+progressbar_look = "---"
+progressbar_elapsed_color = "white"
+statusbar_color = "white"
+
+titles_visibility = "no"
+statusbar_visibility = "yes"
+mouse_support = "no"
+header_visibility = "no"
+display_remaining_time = "no"
+ask_before_clearing_playlists = "no"
+discard_colors_if_item_is_selected = "no"
