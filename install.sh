@@ -18,6 +18,9 @@ packages=(
     xorg-xrandr
     ttf-dejavu
     fzf
+    mpd
+    mpc
+    ncmpcpp
 )
 
 for pkg in "${packages[@]}"; do
