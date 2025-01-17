@@ -16,6 +16,7 @@ bspc config gapless_monocle true
 bspc mousebind super + right mouse resize
 xset -dpms
 xset s off
+mpd &
 gnome-keyring-daemon --start --components=secrets
 setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle"
 sxhkd -c $HOME/.config/bspwm/sxhkdrc &
