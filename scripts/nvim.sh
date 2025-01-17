@@ -3,8 +3,8 @@
 set -e
 
 declare -A files_to_move=(
-    ["$HOME/bspwm/scripts/nvim/init.vim"]="$HOME/.config/nvim"
-    ["$HOME/bspwm/scripts/nvim/nvim-theme.vim"]="$HOME/.config/nvim/colors"
+    ["$HOME/bspwm/dotfiles/nvim/init.vim"]="$HOME/.config/nvim"
+    ["$HOME/bspwm/dotfiles/nvim/nvim-theme.vim"]="$HOME/.config/nvim/colors"
 )
 
 directories=(
