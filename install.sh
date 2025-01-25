@@ -51,7 +51,6 @@ declare -A files_to_chmod=(
     ["$HOME/.config/bspwm/bspwmrc"]=1
     ["$HOME/.xsession"]=1
     ["$HOME/bspwm/scripts/*.sh"]=1
-    ["$HOME/bspwm/firefox/*.sh"]=1
 )
 
 for file in "${!files_to_chmod[@]}"; do
