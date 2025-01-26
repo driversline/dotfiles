@@ -1,1 +1,1 @@
-`for arch | default - ly`
+`default - ly`
