@@ -3,13 +3,11 @@
 set -e
 
 declare -A files_to_move=(
-    ["$HOME/bspwm/dotfiles/nvim/init.vim"]="$HOME/.config/nvim"
-    ["$HOME/bspwm/dotfiles/nvim/nvim-theme.vim"]="$HOME/.config/nvim/colors"
+    ["$HOME/bspwm/dotfiles/nvim/init.lua"]="$HOME/.config/nvim"
 )
 
 directories=(
     "$HOME/.config/nvim"
-    "$HOME/.config/nvim/colors"
 )
 
 create_directories() {
