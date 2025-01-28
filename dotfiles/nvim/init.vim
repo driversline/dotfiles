@@ -1,1 +1,0 @@
-colorscheme nvim-theme
