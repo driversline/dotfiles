@@ -18,5 +18,8 @@ xset -dpms
 xset s off
 setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle"
 sxhkd -c $HOME/.config/bspwm/sxhkdrc &
-read width height < <(xrandr | grep '*' | awk '{print $1}' | head -n 1 | sed 's/x/ /')
-bspc rule -a Alacritty state=floating, rectangle=$((width / 2))x$((height / 3))+$(($width / 4))+$((height / 3))
+
+# - - - - - - Auto - - - - - - #
+
+# read width height < <(xrandr | grep '*' | awk '{print $1}' | head -n 1 | sed 's/x/ /')
+# bspc rule -a Alacritty state=floating, rectangle=$((width / 2))x$((height / 3))+$(($width / 4))+$((height / 3))
