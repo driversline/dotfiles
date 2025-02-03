@@ -1,19 +1,13 @@
 super + w
   alacritty
-super + m
-  minecraft-launcher
 super + q
-  firefox
+  firefox --proxy-server="http=localhost:8080;https=localhost:8080"
 super + d
   flameshot gui
-super + v
-  code
 super + l
   xset dpms force off
 super + n
   alacritty -e ncmpcpp
-super + r
-  alacritty -e ranger
 super + c
   alacritty -e cava
 super + o
@@ -52,3 +46,5 @@ super + shift + k
   mpc repeat on
 super + shift + j
   mpc repeat off
+super + s
+  bspc node -t {tiled,floating}
