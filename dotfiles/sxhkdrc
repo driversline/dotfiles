@@ -46,5 +46,5 @@ super + shift + k
   mpc repeat on
 super + shift + j
   mpc repeat off
-super + s
+super + a
   bspc node -t {tiled,floating}
