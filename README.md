@@ -1,10 +1,10 @@
-| Details     | Value         |
+| \ _ /       | \ _ /         |
 |-------------|---------------|
-| Session     | x11           |
-| Environment | Bspwm         |
-| Terminal    | Alacritty     |
-| Editor      | Neovim        |
-| Binds       | Sxhkd         |
+| session     | x11           |
+| environment | bspwm         |
+| terminal    | alacritty     |
+| editor      | neovim        |
+| binds       | sxhkd         |
 
 `gnome-keyring-daemon --start --components=secrets`
 
