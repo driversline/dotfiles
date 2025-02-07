@@ -1,4 +1,4 @@
-| 1           | 2             |
+| I           | II           |
 |-------------|---------------|
 | session     | x11           |
 | environment | bspwm         |
