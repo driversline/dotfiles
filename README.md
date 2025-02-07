@@ -1,7 +1,7 @@
 | Details     | Value         |
 |-------------|---------------|
+| Session     | x11           |
 | Environment | Bspwm         |
-| Session     | X11           |
 | Terminal    | Alacritty     |
 | Editor      | Neovim        |
 | Binds       | Sxhkd         |
