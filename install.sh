@@ -83,6 +83,6 @@ done
 
 sudo pacman -S --noconfirm ly && sudo systemctl enable ly.service
 
-echo "Excellent. You can reboot the system now."
+echo "Excellent. Reboot the system now."
 
 exit 0
