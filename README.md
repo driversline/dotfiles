@@ -1,11 +1,3 @@
-| ~           | ~             |
-|-------------|---------------|
-| session     | x11           |
-| environment | bspwm         |
-| terminal    | alacritty     |
-| editor      | neovim        |
-| binds       | sxhkd         |
-
 ```mermaid
 graph TD;
     session-->x11;
