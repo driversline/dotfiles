@@ -1,7 +1,7 @@
 super + w
   alacritty
 super + q
-  firefox --proxy-server="http=localhost:8080;https=localhost:8080"
+  firefox
 super + d
   flameshot gui
 super + l
