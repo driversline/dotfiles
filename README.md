@@ -1,6 +1,6 @@
 ```mermaid
 graph TD;
-    classDef default fill:#1a1a1a,stroke:#fff,stroke-width:1px,color:#fff,shadow:0px 0px 10px #fff,font-size:16px,font-family:Arial;
+    classDef default fill:#000,stroke:#fff,stroke-width:1px,color:#fff;
     session-->x11;
     environment-->bspwm;
     terminal-->alacritty;
