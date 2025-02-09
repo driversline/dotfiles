@@ -12,8 +12,8 @@ mods = "Control"
 size = 10
 
 [font.normal]
-family = "Source Code Pro"
 style = "Regular"
+family = "Cascadia Mono"
 
 [window]
 padding = { x = 3, y = 3 }
