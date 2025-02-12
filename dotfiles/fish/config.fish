@@ -8,7 +8,7 @@ function fish_prompt
     set_color white --bold
     set current_path (pwd)
     set home_path $HOME
-    echo -n "[" (string replace -r "^$home_path" "/home" $current_path) "] ~> "
+    printf "[ %s ] ~> " (string replace -r "^$home_path" "/home" $current_path)
     set_color normal
 end
 
