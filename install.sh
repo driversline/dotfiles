@@ -10,17 +10,12 @@ packages=(
     bspwm
     alacritty
     sxhkd
-    ranger
     neovim
     feh
-    gnome-keyring
     xorg-xsetroot
     xorg-xrandr
     ttf-dejavu
     fzf
-    mpd
-    mpc
-    ncmpcpp
 )
 
 for pkg in "${packages[@]}"; do
