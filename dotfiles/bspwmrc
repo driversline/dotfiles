@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 bspc monitor -d I II III IV V
 bspc config focus_follows_pointer true
 bspc config pointer_follows_monitor true
