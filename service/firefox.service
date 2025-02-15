@@ -1,0 +1,12 @@
+[Unit]
+Description=Firefox browser
+After=network.target
+
+[Service]
+ExecStart=/nix/store/0jkgykmcfny1i12pqcf3nilr21dgq0wk-firefox-135.0/bin/firefox
+MemoryHigh=5G
+MemoryLow=500M	
+MemoryMin=200M
+
+[Install]
+WantedBy=default.target
