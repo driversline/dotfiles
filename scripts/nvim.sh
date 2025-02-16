@@ -1,32 +1,22 @@
-#!/usr/bin/env bash
+#!/usr/bin/env fish
 
 set -e
 
-declare -A files_to_move=(
-    ["$HOME/bspwm/dotfiles/nvim/init.lua"]="$HOME/.config/nvim"
-)
+set target "$HOME/bspwm/dotfiles/nvim/init.lua"
+set directory "$HOME/.config/nvim"
 
-directories=(
-    "$HOME/.config/nvim"
-)
+function create_directories
+    mkdir -p $directory
+end
 
-create_directories() {
-    for dir in "${directories[@]}"; do
-        mkdir -p "$dir"
-    done
-}
+function move_file
+    mv $target $directory
+end
 
-move_files() {
-    for src in "${!files_to_move[@]}"; do
-        dest="${files_to_move[$src]}"
-        mv "$src" "$dest"
-    done
-}
-
-main() {
+function main
     create_directories
-    move_files
-}
+    move_file
+end
 
 main
 
