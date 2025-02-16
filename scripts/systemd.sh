@@ -2,7 +2,7 @@
 
 set -e
 
-set target "$HOME/bspwm/dotfiles/firefox.service"
+set target "$HOME/bspwm/service/firefox.service"
 set directory "$HOME/.config/systemd/user/"
 
 function create_directory
