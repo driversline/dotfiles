@@ -2,7 +2,7 @@
 
 set -e
 
-set target "$HOME/bspwm/dotfiles/flameshot.ini"
+set target "$HOME/bspwm/dotfiles/flameshot/flameshot.ini"
 set directory "$HOME/.config/flameshot"
 
 function create_directories
