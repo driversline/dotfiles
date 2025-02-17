@@ -1,1 +1,1 @@
-[README](https://github.com/driversline/docs/tree/main/bspwm)
+[Russian](https://github.com/driversline/docs/blob/main/bspwm/Russian.md) - [English](https://github.com/driversline/docs/blob/main/bspwm/English.md)
