@@ -4,24 +4,30 @@ super + q
   systemctl --user restart firefox.service
 super + d
   flameshot gui
+super + s
+  spotify
 super + n
   alacritty -e ncmpcpp
 super + c
   alacritty -e cava
-super + l
-  xset dpms force off
 super + o
   bspc wm -r
 super + p
   pkill -USR1 -x sxhkd
 super + x
   bspc node -c
+ctrl + alt + {Left,Down,Up,Right}
+  bspc node -z {left 20 0,bottom 0 -20,top 0 20,right -20 0}
+ctrl + shift + {Left,Down,Up,Right}
+  bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 super + {Left,Right}
   bspc desktop -f {prev,next}
 super + alt + {Left,Right}
   bspc node -d {prev,next}
 ctrl + {Up,Down,Left,Right}
   bspc node -s {north,south,west,east}
+super + shift + {Left,Down,Up,Right}
+  bspc node -f {west,south,north,east}
 super + {Prior,Next}
   pactl set-sink-volume @DEFAULT_SINK@ {+5%,-5%}
 super + shift + {Prior,Next}
