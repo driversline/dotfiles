@@ -1,7 +1,5 @@
 #!/usr/bin/env fish
 
-set -e
-
 set target "$HOME/bspwm/dotfiles/fish/config.fish"
 set directory "$HOME/.config/fish"
 
