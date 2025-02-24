@@ -1,7 +1,5 @@
 #!/usr/bin/env fish
 
-set -e
-
 set target "$HOME/bspwm/service/firefox.service"
 set directory "$HOME/.config/systemd/user/"
 
