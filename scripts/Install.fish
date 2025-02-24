@@ -1,7 +1,5 @@
 #!/usr/bin/env fish
 
-set -e
-
 set targets "$HOME/bspwm/dotfiles/bspwm/bspwmrc $HOME/bspwm/dotfiles/bspwm/sxhkdrc"
 set directory "$HOME/.config/bspwm"
 
