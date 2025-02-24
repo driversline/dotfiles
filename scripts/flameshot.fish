@@ -1,7 +1,5 @@
 #!/usr/bin/env fish
 
-set -e
-
 set target "$HOME/bspwm/dotfiles/flameshot/flameshot.ini"
 set directory "$HOME/.config/flameshot"
 
