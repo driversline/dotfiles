@@ -1,7 +1,5 @@
 #!/usr/bin/env fish
 
-set -e
-
 set target "$HOME/bspwm/dotfiles/nvim/init.lua"
 set directory "$HOME/.config/nvim"
 
