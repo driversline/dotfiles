@@ -1,7 +1,5 @@
 #!/usr/bin/env fish
 
-set -e
-
 set target "$HOME/bspwm/dotfiles/alacritty/alacritty.toml"
 set directory "$HOME/.config/alacritty"
 
